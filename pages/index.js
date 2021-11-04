@@ -18,13 +18,9 @@ export default function Home() {
           </p>
           <h1 className="my-8 md:text-2xl">My name is Gao Shanghui.</h1>
           <h2 className="text-3xl font-extrabold my-8 leading-10 md:text-5xl md:leading-snug md:my-10">
-            Solving problems{' '}
-            <span className="text-2xl font-normal md:text-4xl">by</span>
+            Solving problems <span className="text-2xl font-normal md:text-4xl">by</span>
             <br />
-            design <span className="text-2xl font-normal md:text-4xl">
-              and
-            </span>{' '}
-            development
+            design <span className="text-2xl font-normal md:text-4xl">and</span> development
             <br />
             get me <span className="text-yellow-500">excited</span>.
           </h2>
@@ -33,24 +29,14 @@ export default function Home() {
             <br />
             Currently, I am working as a Full-time Web designer.
             <br />I speak Chinese, English, and Japanese. My Chinese name is{' '}
-            <span className="tracking-wider">高尚暉</span>(gāo shàng hūi)
+            <span className="tracking-wider">高尚晖</span>(gāo shàng hūi)
             <br />
             You can find me on{' '}
-            <a
-              className="text-blue-600"
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/gaoshanghui"
-            >
+            <a className="text-blue-600" target="_blank" rel="noreferrer" href="https://github.com/gaoshanghui">
               Github
             </a>
             ,{' '}
-            <a
-              className="text-blue-600"
-              target="_blank"
-              rel="noreferrer"
-              href="https://dribbble.com/gaoshanghui"
-            >
+            <a className="text-blue-600" target="_blank" rel="noreferrer" href="https://dribbble.com/gaoshanghui">
               Dribbble
             </a>
             .
