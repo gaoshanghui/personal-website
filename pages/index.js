@@ -1,48 +1,90 @@
 import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import Navigation from '../components/navigation';
+import projectCover from '../public/project-cover.jpg';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
-        <title>Gao Shanghui</title>
+        <title>Home | Gao Shanghui</title>
         <meta charSet="utf-8" />
         <meta
           name="description"
-          content="It is Gao Shanghui's digital home to show his current working and also archived projects."
+          content="Hello, my name is Gao Shanghui. It is the portfolio to show my recent projects."
         />
       </Head>
-      <div className="bg-gray-50 px-4 h-screen flex items-center justify-center md:px-6 xl:justify-start xl:pl-52">
-        <div>
-          <p className="text-2xl font-extrabold mb-16 md:text-4xl md:mb-20">
-            👋 <span className="tracking-wider">你好</span>!
-          </p>
-          <h1 className="my-8 md:text-2xl">My name is Gao Shanghui.</h1>
-          <h2 className="text-3xl font-extrabold my-8 leading-10 md:text-5xl md:leading-snug md:my-10">
-            Solving problems <span className="text-2xl font-normal md:text-4xl">by</span>
-            <br />
-            design <span className="text-2xl font-normal md:text-4xl">and</span> development
-            <br />
-            get me <span className="text-yellow-500">excited</span>.
-          </h2>
-          <p className="leading-7 md:text-2xl md:leading-10">
-            I am originally from China, but these days I live in Fukuoka, Japan.
-            <br />
-            Currently, I am working as a Full-time Web designer.
-            <br />I speak Chinese, English, and Japanese. My Chinese name is{' '}
-            <span className="tracking-wider">高尚晖</span>(gāo shàng hūi)
-            <br />
-            You can find me on{' '}
-            <a className="text-blue-600" target="_blank" rel="noreferrer" href="https://github.com/gaoshanghui">
-              Github
-            </a>
-            ,{' '}
-            <a className="text-blue-600" target="_blank" rel="noreferrer" href="https://dribbble.com/gaoshanghui">
-              Dribbble
-            </a>
-            .
-          </p>
+      <Navigation />
+      <div className="p-5 space-y-5 mt-[69px]">
+        {/* Project Card */}
+        <div className="relative h-[calc(66vh)]">
+          <Image
+            src={projectCover}
+            alt="Project Name"
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
+          <div className="absolute top-0 left-0 w-full h-full bg-project-cover-to-t" />
+          <div className="absolute bottom-10 left-4">
+            <h2 className="text-3xl leading-9 font-bold text-white drop-shadow-md mb-1">
+              Pomoflow
+            </h2>
+            <p className="text-base leading-6 font-normal text-white drop-shadow-md mb-4 max-w-[calc(100vw-72px)]">
+              The simple description about the project.
+            </p>
+            <Link href="/project/pomoflow">
+              <button className="bg-blue-600 text-white px-5 py-3 rounded-lg shadow-md text-sm leading-5 font-bold">
+                View case study
+              </button>
+            </Link>
+          </div>
+        </div>
+
+        {/* Project Card */}
+        <div className="relative h-[calc(66vh)]">
+          <Image
+            src={projectCover}
+            alt="Project Name"
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
+          <div className="absolute top-0 left-0 w-full h-full bg-project-cover-to-t" />
+          <div className="absolute bottom-10 left-4">
+            <h2 className="text-3xl leading-9 font-bold text-white drop-shadow-md mb-1">
+              Pomoflow
+            </h2>
+            <p className="text-base leading-6 font-normal text-white drop-shadow-md mb-4">
+              The simple description about the project.
+            </p>
+            <Link href="/project/pomoflow">
+              <button className="bg-blue-600 text-white px-5 py-3 rounded-lg shadow-md text-sm leading-5 font-bold">
+                View case study
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
+      <footer className="py-4 border-t">
+        <p className="text-sm leading-5 font-bold text-center text-gray-900">
+          Designed & Built by Gao Shanghui
+        </p>
+        <p className="text-sm leading-5 font-normal text-center text-gray-600">
+          Curious about the source code? You can find it{' '}
+          <a
+            href="#"
+            target="_blank"
+            href="https://twitter.com/"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            here
+          </a>
+          .
+        </p>
+      </footer>
+    </>
   );
 }
