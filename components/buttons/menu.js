@@ -1,10 +1,9 @@
 import { useState } from 'react';
 
-export const MenuButton = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
+export const MenuButton = ({ menuIsOpen, setMenuIsOpen }) => {
   const handleOnClick = () => {
-    setIsOpen(!isOpen);
+    console.log('clicked');
+    setMenuIsOpen(!menuIsOpen);
   };
 
   return (
@@ -15,12 +14,12 @@ export const MenuButton = () => {
       <div>
         <span
           className={`block h-line w-5 bg-blue-600 rounded-full absolute  left-[calc(50%-10px)] transition transform ${
-            isOpen ? 'top-[calc(50%-1px)] rotate-45' : 'top-3'
+            menuIsOpen ? 'top-[calc(50%-1px)] rotate-45' : 'top-3'
           }`}
         ></span>
         <span
           className={`block h-line w-5 bg-blue-600 rounded-full absolute  left-[calc(50%-10px)] transition transform ${
-            isOpen ? 'top-[calc(50%-1px)] -rotate-45' : 'bottom-3'
+            menuIsOpen ? 'top-[calc(50%-1px)] -rotate-45' : 'bottom-3'
           }`}
         ></span>
       </div>

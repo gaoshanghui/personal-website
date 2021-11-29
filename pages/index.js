@@ -34,7 +34,7 @@ export default function Home() {
             <p className="text-base leading-6 font-normal text-white drop-shadow-md mb-4 max-w-[calc(100vw-72px)]">
               The simple description about the project.
             </p>
-            <Link href="/project/pomoflow">
+            <Link href="/project/pomoflow" passHref>
               <button className="bg-blue-600 text-white px-5 py-3 rounded-lg shadow-md text-sm leading-5 font-bold">
                 View case study
               </button>
@@ -59,7 +59,7 @@ export default function Home() {
             <p className="text-base leading-6 font-normal text-white drop-shadow-md mb-4">
               The simple description about the project.
             </p>
-            <Link href="/project/pomoflow">
+            <Link href="/project/pomoflow" passHref>
               <button className="bg-blue-600 text-white px-5 py-3 rounded-lg shadow-md text-sm leading-5 font-bold">
                 View case study
               </button>
@@ -76,7 +76,6 @@ export default function Home() {
           <a
             href="#"
             target="_blank"
-            href="https://twitter.com/"
             rel="noopener noreferrer"
             className="text-blue-600 underline"
           >
