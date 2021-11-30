@@ -1,8 +1,5 @@
-import { useState } from 'react';
-
-export const MenuButton = ({ menuIsOpen, setMenuIsOpen }) => {
+const MenuButton = ({ menuIsOpen, setMenuIsOpen }) => {
   const handleOnClick = () => {
-    console.log('clicked');
     setMenuIsOpen(!menuIsOpen);
   };
 
@@ -26,3 +23,5 @@ export const MenuButton = ({ menuIsOpen, setMenuIsOpen }) => {
     </button>
   );
 };
+
+export default MenuButton;
