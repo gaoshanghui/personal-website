@@ -16,7 +16,7 @@ export default function Home() {
           content="Hello, my name is Gao Shanghui. It is the portfolio to show my recent projects."
         />
       </Head>
-      New portfolio weebsite is coming soon!
+      New portfolio website is coming soon!
       {/* <Header />
       <div className="p-5 space-y-5 mt-[69px]">
         <Card
