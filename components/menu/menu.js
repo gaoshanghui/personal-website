@@ -3,7 +3,7 @@ import Link from 'next/link';
 const Menu = ({ menuIsOpen }) => {
   return (
     <div
-      className={`fixed top-[69px] z-20 bg-white w-full pt-16 pb-20 pl-28 ${
+      className={`fixed top-[69px] z-20 bg-white w-full pt-16 pb-20 pl-28 lg:hidden ${
         menuIsOpen ? 'block ' : 'hidden'
       }`}
     >

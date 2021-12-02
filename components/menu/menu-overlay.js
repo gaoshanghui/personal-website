@@ -5,7 +5,7 @@ const MenuOverlay = ({ menuIsOpen, setMenuIsOpen }) => {
 
   return (
     <div
-      className={`top-0 left-0 z-10 w-screen h-screen bg-black bg-opacity-40 backdrop-blur-sm transition ${
+      className={`top-0 left-0 z-10 w-screen h-screen bg-black bg-opacity-40 backdrop-blur-sm transition lg:hidden ${
         menuIsOpen ? 'fixed' : 'hidden'
       }`}
       onClick={handleOnClick}

@@ -9,7 +9,7 @@ const Navigation = ({ menuIsOpen, setMenuIsOpen }) => {
         menuIsOpen ? 'bg-white' : 'bg-white bg-opacity-75 backdrop-blur-lg'
       }`}
     >
-      <nav className="w-full flex justify-between lg:grid lg:grid-cols-3 lg:w-10/12 mx-auto">
+      <nav className="w-full flex justify-between lg:grid lg:grid-cols-3 lg:w-11/12 mx-auto">
         <div className="hidden lg:flex gap-8 items-center">
           <Link href="/">
             <a className="text-gray-900 text-base leading-6 font-bold">
@@ -45,7 +45,9 @@ const Navigation = ({ menuIsOpen, setMenuIsOpen }) => {
           <a target="_blank" href="#" rel="noopener noreferrer">
             <LinkedinButton />
           </a>
-          <MenuButton menuIsOpen={menuIsOpen} setMenuIsOpen={setMenuIsOpen} />
+          <span className="lg:hidden">
+            <MenuButton menuIsOpen={menuIsOpen} setMenuIsOpen={setMenuIsOpen} />
+          </span>
         </div>
       </nav>
     </div>
