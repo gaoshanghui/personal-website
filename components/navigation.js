@@ -42,7 +42,11 @@ const Navigation = ({ menuIsOpen, setMenuIsOpen }) => {
           <a href="mailto:mail.gaoshanghui@gmail.com">
             <MailButton />
           </a>
-          <a target="_blank" href="#" rel="noopener noreferrer">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/shanghui-gao-b503b1227/"
+            rel="noopener noreferrer"
+          >
             <LinkedinButton />
           </a>
           <span className="lg:hidden">

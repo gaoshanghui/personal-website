@@ -7,7 +7,7 @@ const Footer = () => {
       <p className="text-sm leading-5 font-normal text-center text-gray-600">
         Curious about the source code? You can find it{' '}
         <a
-          href="#"
+          href="https://github.com/gaoshanghui/portfolio-website"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-600 underline"
