@@ -12,15 +12,17 @@ const Navigation = ({ menuIsOpen, setMenuIsOpen }) => {
       <nav className="w-full flex justify-between lg:grid lg:grid-cols-3 lg:w-11/12 mx-auto">
         <div className="hidden lg:flex gap-8 items-center">
           <Link href="/">
-            <a className="text-gray-900 text-base leading-6 font-bold">
+            <a className="text-gray-900 hover:text-blue-600 transition duration-300 text-base leading-6 font-bold">
               Projects
             </a>
           </Link>
           <Link href="/about">
-            <a className="text-gray-900 text-base leading-6 font-bold">About</a>
+            <a className="text-gray-900 hover:text-blue-600 transition duration-300 text-base leading-6 font-bold">
+              About
+            </a>
           </Link>
           <a
-            className="text-gray-900 text-base leading-6 font-bold"
+            className="text-gray-900 hover:text-blue-600 transition duration-300 text-base leading-6 font-bold"
             target="_blank"
             href="https://twitter.com/"
             rel="noopener noreferrer"

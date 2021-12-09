@@ -5,7 +5,7 @@ import ContainedButton from './buttons/contained-button';
 const Card = ({ media, title, description, link }) => {
   return (
     <div className="">
-      <div className="relative h-[calc(66vh)]">
+      <div className="relative h-[calc(66vh)] lg:max-h-[800px]">
         <Image
           src={media}
           alt={title}
@@ -14,16 +14,16 @@ const Card = ({ media, title, description, link }) => {
           priority
         />
         <div className="absolute top-0 left-0 w-full h-full bg-project-cover-to-t" />
-        <div className="absolute bottom-10 left-4">
-          <h2 className="text-3xl leading-9 font-bold text-white drop-shadow-md mb-1">
+        <div className="absolute bottom-10 lg:bottom-1/5 left-4 lg:left-1/10">
+          <h2 className="text-3xl lg:text-5xl font-bold text-white drop-shadow-md mb-1 lg:mb-2">
             <Link href={link}>
               <a>{title}</a>
             </Link>
           </h2>
-          <p className="text-base leading-6 font-normal text-white drop-shadow-md mb-4 max-w-[calc(100vw-72px)]">
+          <p className="text-base lg:text-2xl font-normal text-white drop-shadow-md mb-4 lg:mb-6 max-w-[calc(100vw-72px)]">
             {description}
           </p>
-          <ContainedButton textLabel="View Project" href={link} />
+          <ContainedButton textLabel="View case study" href={link} />
         </div>
       </div>
     </div>
