@@ -10,13 +10,13 @@ const MenuButton = ({ menuIsOpen, setMenuIsOpen }) => {
     >
       <div>
         <span
-          className={`block h-line w-5 bg-blue-600 rounded-full absolute  left-[calc(50%-10px)] transition transform ${
-            menuIsOpen ? 'top-[calc(50%-1px)] rotate-45' : 'top-3'
+          className={`block h-[2px] w-5 bg-blue-600 rounded-full absolute  left-[calc(50%-10px)] transition transform ${
+            menuIsOpen ? "top-[calc(50%-1px)] rotate-45" : "top-3"
           }`}
         ></span>
         <span
-          className={`block h-line w-5 bg-blue-600 rounded-full absolute  left-[calc(50%-10px)] transition transform ${
-            menuIsOpen ? 'top-[calc(50%-1px)] -rotate-45' : 'bottom-3'
+          className={`block h-[2px] w-5 bg-blue-600 rounded-full absolute  left-[calc(50%-10px)] transition transform ${
+            menuIsOpen ? "top-[calc(50%-1px)] -rotate-45" : "bottom-3"
           }`}
         ></span>
       </div>

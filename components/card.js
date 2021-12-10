@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import ContainedButton from './buttons/contained-button';
+import Image from "next/image";
+import Link from "next/link";
+import ContainedButton from "./buttons/contained-button";
 
 const Card = ({ media, title, description, link }) => {
   return (
@@ -13,8 +13,8 @@ const Card = ({ media, title, description, link }) => {
           objectFit="cover"
           priority
         />
-        <div className="absolute top-0 left-0 w-full h-full bg-project-cover-to-t" />
-        <div className="absolute bottom-10 lg:bottom-1/5 left-4 lg:left-1/10">
+        <div className="absolute top-0 left-0 w-full h-full bg-project-overlay-small lg:bg-project-overlay-large" />
+        <div className="absolute bottom-10 lg:bottom-[20%] left-4 lg:left-[10%]">
           <h2 className="text-3xl lg:text-5xl font-bold text-white drop-shadow-md mb-1 lg:mb-2">
             <Link href={link}>
               <a>{title}</a>
