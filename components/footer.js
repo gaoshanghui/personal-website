@@ -5,14 +5,14 @@ const Footer = () => {
         Designed & Built by Gao Shanghui
       </p>
       <p className="text-sm leading-5 font-normal text-center text-gray-600">
-        Curious about the source code? You can find it{' '}
+        Curious about the source code? You can{" "}
         <a
           href="https://github.com/gaoshanghui/portfolio-website"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-600 underline"
         >
-          here
+          find it here
         </a>
         .
       </p>

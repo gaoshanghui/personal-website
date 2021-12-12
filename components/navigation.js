@@ -36,7 +36,7 @@ const Navigation = ({ menuIsOpen, setMenuIsOpen }) => {
               Gao Shanghui
             </h1>
             <p className="text-xs lg:text-center leading-4 font-normal text-gray-600">
-              Web and UX designer
+              UX designer and Web Developer
             </p>
           </a>
         </Link>

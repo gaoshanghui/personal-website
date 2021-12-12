@@ -7,6 +7,7 @@ const MenuButton = ({ menuIsOpen, setMenuIsOpen }) => {
     <button
       onClick={handleOnClick}
       className="relative flex justify-center items-center w-10 h-10 border-solid border rounded-lg border-gray-300 transition hover:bg-gray-100"
+      aria-label="Toggle menu"
     >
       <div>
         <span

@@ -1,6 +1,9 @@
 export const MailButton = () => {
   return (
-    <button className="flex justify-center items-center w-10 h-10 border-solid border rounded-lg border-gray-300 transition hover:bg-gray-100">
+    <button
+      className="flex justify-center items-center w-10 h-10 border-solid border rounded-lg border-gray-300 transition hover:bg-gray-100"
+      aria-label="send email"
+    >
       <svg
         width="24"
         height="24"
@@ -22,7 +25,10 @@ export const MailButton = () => {
 
 export const LinkedinButton = () => {
   return (
-    <button className="flex justify-center items-center w-10 h-10 border-solid border rounded-lg border-gray-300 transition hover:bg-gray-100">
+    <button
+      className="flex justify-center items-center w-10 h-10 border-solid border rounded-lg border-gray-300 transition hover:bg-gray-100"
+      aria-label="To LinkedIn profile"
+    >
       <svg
         width="24"
         height="24"

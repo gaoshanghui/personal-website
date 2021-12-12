@@ -7,7 +7,10 @@ const SocialLinks = () => {
         You can also find me at
       </p>
       <div className="space-x-5 flex justify-center">
-        <SocialLink link="https://www.linkedin.com/in/shanghui-gao-b503b1227">
+        <SocialLink
+          link="https://www.linkedin.com/in/shanghui-gao-b503b1227"
+          ariaLabel="LinkedIn profile"
+        >
           <svg
             width="24"
             height="24"
@@ -22,7 +25,10 @@ const SocialLinks = () => {
             />
           </svg>
         </SocialLink>
-        <SocialLink link="https://github.com/gaoshanghui">
+        <SocialLink
+          link="https://github.com/gaoshanghui"
+          ariaLabel="Github profile"
+        >
           <svg
             width="24"
             height="24"
@@ -73,7 +79,10 @@ const SocialLinks = () => {
             </defs>
           </svg>
         </SocialLink>
-        <SocialLink link="https://dribbble.com/gaoshanghui">
+        <SocialLink
+          link="https://dribbble.com/gaoshanghui"
+          ariaLabel="Dribbble profile"
+        >
           <svg
             width="24"
             height="24"
