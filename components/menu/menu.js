@@ -1,10 +1,10 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 const Menu = ({ menuIsOpen }) => {
   return (
     <div
       className={`fixed top-[69px] z-20 bg-white w-full pt-16 pb-20 pl-28 lg:hidden ${
-        menuIsOpen ? 'block ' : 'hidden'
+        menuIsOpen ? "block " : "hidden"
       }`}
     >
       <ul className="space-y-10">
@@ -16,7 +16,7 @@ const Menu = ({ menuIsOpen }) => {
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/about">
             <a className="text-gray-900 text-xl leading-7 font-bold">About</a>
           </Link>
         </li>

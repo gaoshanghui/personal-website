@@ -1,9 +1,9 @@
-import Head from 'next/head';
-import Card from '../components/card';
-import Footer from '../components/footer';
-import Header from '../components/header';
-import projectCover1 from '../public/project-covers/project-cover-1.jpg';
-import projectCover2 from '../public/project-covers/project-cover-2.jpg';
+import Head from "next/head";
+import Card from "../components/card";
+import Footer from "../components/footer";
+import Header from "../components/header";
+import projectCover1 from "../public/images/project-covers/project-cover-1.jpg";
+import projectCover2 from "../public/images/project-covers/project-cover-2.jpg";
 
 export default function Home() {
   return (

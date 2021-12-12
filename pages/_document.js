@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -10,9 +10,13 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* Add the web font Inter to the entire application */}
+          {/* Add the web fonts to the entire application */}
           <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700&display=swap"
             rel="stylesheet"
           />
         </Head>
