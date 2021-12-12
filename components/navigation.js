@@ -46,7 +46,7 @@ const Navigation = ({ menuIsOpen, setMenuIsOpen }) => {
           </a>
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/shanghui-gao-b503b1227/"
+            href="https://www.linkedin.com/in/shanghui-gao-b503b1227"
             rel="noopener noreferrer"
           >
             <LinkedinButton />
