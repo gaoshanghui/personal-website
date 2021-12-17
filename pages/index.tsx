@@ -1,3 +1,4 @@
+import type { NextPage } from "next";
 import Head from "next/head";
 import Card from "../components/card";
 import Footer from "../components/footer";
@@ -5,7 +6,7 @@ import Header from "../components/header";
 import projectCover1 from "../public/images/project-covers/project-cover-1.jpg";
 import projectCover2 from "../public/images/project-covers/project-cover-2.jpg";
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <>
       <Head>
@@ -34,4 +35,6 @@ export default function Home() {
       <Footer />
     </>
   );
-}
+};
+
+export default Home;

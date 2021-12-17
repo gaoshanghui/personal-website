@@ -1,13 +1,17 @@
-const SocialLink = (props) => {
+interface SocialLinkProps {
+  href: string;
+  ariaLabel: string;
+}
+
+const SocialLink: React.FC<SocialLinkProps> = (props) => {
   return (
     <a
-      href={props.link}
+      href={props.href}
       target="_blank"
       rel="noreferrer"
       aria-label={props.ariaLabel}
     >
       <span className="inline-block p-3 border border-gray-200 rounded-full">
-        {/* Social link component has a svg child */}
         {props.children}
       </span>
     </a>

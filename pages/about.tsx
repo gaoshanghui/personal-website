@@ -1,18 +1,17 @@
+import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Footer from "../components/footer";
 import Header from "../components/header";
-import Chip from "../components/chip/chip";
 import ContainedButton from "../components/buttons/contained-button";
 import SectionTitle from "../components/section-title";
 import EducationInfo from "../components/education-info";
 import SocialLinks from "../components/social-links";
-
 import profilePicLarge from "../public/images/profile-pic-large.jpg";
 import profilePicSmall from "../public/images/profile-pic-small.jpg";
 import SkillInfo from "../components/skill-info";
 
-export default function About() {
+const About: NextPage = () => {
   return (
     <>
       <Head>
@@ -118,4 +117,6 @@ export default function About() {
       <Footer />
     </>
   );
-}
+};
+
+export default About;

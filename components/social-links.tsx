@@ -1,6 +1,6 @@
 import SocialLink from "./social-link";
 
-const SocialLinks = () => {
+const SocialLinks: React.FC = () => {
   return (
     <div className="flex flex-col justify-center mb-10">
       <p className="text-base text-center leading-6 font-bold mb-4">
@@ -8,7 +8,7 @@ const SocialLinks = () => {
       </p>
       <div className="space-x-5 flex justify-center">
         <SocialLink
-          link="https://www.linkedin.com/in/shanghui-gao-b503b1227"
+          href="https://www.linkedin.com/in/shanghui-gao-b503b1227"
           ariaLabel="LinkedIn profile"
         >
           <svg
@@ -26,7 +26,7 @@ const SocialLinks = () => {
           </svg>
         </SocialLink>
         <SocialLink
-          link="https://github.com/gaoshanghui"
+          href="https://github.com/gaoshanghui"
           ariaLabel="Github profile"
         >
           <svg
@@ -80,7 +80,7 @@ const SocialLinks = () => {
           </svg>
         </SocialLink>
         <SocialLink
-          link="https://dribbble.com/gaoshanghui"
+          href="https://dribbble.com/gaoshanghui"
           ariaLabel="Dribbble profile"
         >
           <svg
