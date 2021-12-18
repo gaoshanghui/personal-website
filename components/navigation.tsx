@@ -1,12 +1,20 @@
-import Link from "next/link";
-import { MailButton, LinkedinButton } from "./buttons/outlined-button";
-import MenuButton from "./menu/menu-button";
+import Link from 'next/link';
+import { MailButton, LinkedinButton } from './outlined-button';
+import MenuButton from './menu/menu-button';
 
-const Navigation = ({ menuIsOpen, setMenuIsOpen }) => {
+interface NavigationProps {
+  menuIsOpen: boolean;
+  setMenuIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Navigation: React.FC<NavigationProps> = ({
+  menuIsOpen,
+  setMenuIsOpen,
+}) => {
   return (
     <div
       className={`px-5 py-3 fixed top-0 left-0 z-20 w-full flex items-center border-b border-gray-300 transition ${
-        menuIsOpen ? "bg-white" : "bg-white bg-opacity-75 backdrop-blur-lg"
+        menuIsOpen ? 'bg-white' : 'bg-white bg-opacity-75 backdrop-blur-lg'
       }`}
     >
       <nav className="w-full flex justify-between lg:grid lg:grid-cols-3 lg:w-11/12 mx-auto">

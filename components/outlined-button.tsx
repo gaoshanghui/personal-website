@@ -1,4 +1,4 @@
-export const MailButton = () => {
+export const MailButton: React.FC = () => {
   return (
     <button
       className="flex justify-center items-center w-10 h-10 border-solid border rounded-lg border-gray-300 transition hover:bg-gray-100"
@@ -23,7 +23,7 @@ export const MailButton = () => {
   );
 };
 
-export const LinkedinButton = () => {
+export const LinkedinButton: React.FC = () => {
   return (
     <button
       className="flex justify-center items-center w-10 h-10 border-solid border rounded-lg border-gray-300 transition hover:bg-gray-100"

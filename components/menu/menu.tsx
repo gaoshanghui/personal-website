@@ -1,10 +1,14 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-const Menu = ({ menuIsOpen }) => {
+interface MenuProps {
+  menuIsOpen: boolean;
+}
+
+const Menu: React.FC<MenuProps> = ({ menuIsOpen }) => {
   return (
     <div
       className={`fixed top-[69px] z-20 bg-white w-full pt-16 pb-20 pl-28 lg:hidden ${
-        menuIsOpen ? "block " : "hidden"
+        menuIsOpen ? 'block ' : 'hidden'
       }`}
     >
       <ul className="space-y-10">

@@ -1,4 +1,10 @@
-const EducationInfo = (props) => {
+interface EducationInfoProps {
+  school: string;
+  degree: string;
+  period: string;
+}
+
+const EducationInfo: React.FC<EducationInfoProps> = (props) => {
   return (
     <div className="mb-8">
       <p className="text-xl lg:text-2xl leading-7 lg:leading-8 text-gray-900 mb-4">

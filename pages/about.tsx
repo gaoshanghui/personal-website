@@ -1,15 +1,15 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import Footer from "../components/footer";
-import Header from "../components/header";
-import ContainedButton from "../components/buttons/contained-button";
-import SectionTitle from "../components/section-title";
-import EducationInfo from "../components/education-info";
-import SocialLinks from "../components/social-links";
-import profilePicLarge from "../public/images/profile-pic-large.jpg";
-import profilePicSmall from "../public/images/profile-pic-small.jpg";
-import SkillInfo from "../components/skill-info";
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Image from 'next/image';
+import Footer from '../components/footer';
+import Header from '../components/header';
+import ContainedButton from '../components/contained-button';
+import SectionTitle from '../components/section-title';
+import EducationInfo from '../components/education-info';
+import SocialLinks from '../components/social-links';
+import profilePicLarge from '../public/images/profile-pic-large.jpg';
+import profilePicSmall from '../public/images/profile-pic-small.jpg';
+import SkillInfo from '../components/skill-info';
 
 const About: NextPage = () => {
   return (
@@ -72,38 +72,38 @@ const About: NextPage = () => {
             <SkillInfo
               title="Design"
               skills={[
-                "Figma",
-                "XD",
-                "Sketch",
-                "InVision",
-                "Illustrator",
-                "Photoshop",
-                "InDesign",
-                "ProtoPie",
+                'Figma',
+                'XD',
+                'Sketch',
+                'InVision',
+                'Illustrator',
+                'Photoshop',
+                'InDesign',
+                'ProtoPie',
               ]}
             />
             <SkillInfo
               title="Engineering"
               skills={[
-                "HTML/CSS(SCSS)",
-                "JavaScript",
-                "React",
-                "NextJS",
-                "Express",
-                "Git",
-                "WordPress",
+                'HTML/CSS(SCSS)',
+                'JavaScript',
+                'React',
+                'NextJS',
+                'Express',
+                'Git',
+                'WordPress',
               ]}
             />
             <SkillInfo
               title="Languages"
-              skills={["Chinese", "English", "Japanese"]}
+              skills={['Chinese', 'English', 'Japanese']}
             />
           </div>
         </section>
         <section className="mb-32">
           <SectionTitle text="Contact" />
           <p className="text-sm text-gray-900 leading-7 mb-4 lg:text-base lg:leading-8">
-            Whether you have a question or just want to say hi,{" "}
+            Whether you have a question or just want to say hi,{' '}
             <br className="hidden lg:block" />I will try my best to get back to
             you!
           </p>

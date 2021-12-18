@@ -5,6 +5,7 @@ import Navigation from './navigation';
 
 const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+
   return (
     <div>
       <Navigation menuIsOpen={menuIsOpen} setMenuIsOpen={setMenuIsOpen} />

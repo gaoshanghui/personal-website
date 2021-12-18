@@ -1,4 +1,12 @@
-const MenuButton = ({ menuIsOpen, setMenuIsOpen }) => {
+interface MenuButtonProps {
+  menuIsOpen: boolean;
+  setMenuIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const MenuButton: React.FC<MenuButtonProps> = ({
+  menuIsOpen,
+  setMenuIsOpen,
+}) => {
   const handleOnClick = () => {
     setMenuIsOpen(!menuIsOpen);
   };
@@ -12,12 +20,12 @@ const MenuButton = ({ menuIsOpen, setMenuIsOpen }) => {
       <div>
         <span
           className={`block h-[2px] w-5 bg-blue-600 rounded-full absolute  left-[calc(50%-10px)] transition transform ${
-            menuIsOpen ? "top-[calc(50%-1px)] rotate-45" : "top-3"
+            menuIsOpen ? 'top-[calc(50%-1px)] rotate-45' : 'top-3'
           }`}
         ></span>
         <span
           className={`block h-[2px] w-5 bg-blue-600 rounded-full absolute  left-[calc(50%-10px)] transition transform ${
-            menuIsOpen ? "top-[calc(50%-1px)] -rotate-45" : "bottom-3"
+            menuIsOpen ? 'top-[calc(50%-1px)] -rotate-45' : 'bottom-3'
           }`}
         ></span>
       </div>

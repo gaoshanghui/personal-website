@@ -1,4 +1,12 @@
-const MenuOverlay = ({ menuIsOpen, setMenuIsOpen }) => {
+interface MenuOverlayProps {
+  menuIsOpen: boolean;
+  setMenuIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const MenuOverlay: React.FC<MenuOverlayProps> = ({
+  menuIsOpen,
+  setMenuIsOpen,
+}) => {
   const handleOnClick = () => {
     setMenuIsOpen(false);
   };

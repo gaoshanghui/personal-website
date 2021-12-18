@@ -1,6 +1,11 @@
-import Chip from "./chip/chip";
+import Chip from './chip';
 
-const SkillInfo = (props) => {
+interface SkillInfoProps {
+  skills: string[];
+  title: string;
+}
+
+const SkillInfo: React.FC<SkillInfoProps> = (props) => {
   return (
     <div className="mb-8">
       <p className="text-xl lg:text-2xl leading-7 lg:leading-8 text-gray-900 mb-4">

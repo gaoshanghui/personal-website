@@ -1,6 +1,14 @@
 import Link from 'next/link';
 
-const ContainedButton = ({ textLabel, href }) => {
+interface ContainedButtonProps {
+  textLabel: string;
+  href: string;
+}
+
+const ContainedButton: React.FC<ContainedButtonProps> = ({
+  textLabel,
+  href,
+}) => {
   return (
     <Link href={href}>
       <a

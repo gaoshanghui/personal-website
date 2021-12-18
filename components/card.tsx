@@ -1,8 +1,15 @@
-import Image from "next/image";
-import Link from "next/link";
-import ContainedButton from "./buttons/contained-button";
+import Image from 'next/image';
+import Link from 'next/link';
+import ContainedButton from './contained-button';
 
-const Card = ({ media, title, description, link }) => {
+interface CardProps {
+  media: string;
+  title: string;
+  description: string;
+  link: string;
+}
+
+const Card: React.FC<CardProps> = ({ media, title, description, link }) => {
   return (
     <div className="">
       <div className="relative h-[calc(66vh)] lg:max-h-[800px]">
