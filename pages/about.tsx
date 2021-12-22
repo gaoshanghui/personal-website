@@ -79,7 +79,6 @@ const About: NextPage = () => {
                 'Illustrator',
                 'Photoshop',
                 'InDesign',
-                'ProtoPie',
               ]}
             />
             <SkillInfo
@@ -87,9 +86,9 @@ const About: NextPage = () => {
               skills={[
                 'HTML/CSS(SCSS)',
                 'JavaScript',
+                'TypeScript',
                 'React',
                 'NextJS',
-                'Express',
                 'Git',
                 'WordPress',
               ]}
