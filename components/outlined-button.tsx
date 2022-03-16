@@ -1,7 +1,7 @@
 export const MailButton: React.FC = () => {
   return (
     <button
-      className="flex justify-center items-center w-10 h-10 border-solid border rounded-lg border-gray-300 transition hover:bg-gray-100"
+      className="flex h-10 w-10 items-center justify-center rounded-lg border border-solid border-gray-300 transition hover:bg-gray-100"
       aria-label="send email"
     >
       <svg
@@ -26,7 +26,7 @@ export const MailButton: React.FC = () => {
 export const LinkedinButton: React.FC = () => {
   return (
     <button
-      className="flex justify-center items-center w-10 h-10 border-solid border rounded-lg border-gray-300 transition hover:bg-gray-100"
+      className="flex h-10 w-10 items-center justify-center rounded-lg border border-solid border-gray-300 transition hover:bg-gray-100"
       aria-label="To LinkedIn profile"
     >
       <svg

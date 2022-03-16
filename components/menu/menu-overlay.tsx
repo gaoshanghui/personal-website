@@ -13,8 +13,8 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({
 
   return (
     <div
-      className={`top-0 left-0 z-10 w-screen h-screen bg-black bg-opacity-40 backdrop-blur-sm transition lg:hidden ${
-        menuIsOpen ? 'fixed' : 'hidden'
+      className={`top-0 left-0 z-10 h-screen w-screen bg-black bg-opacity-40 backdrop-blur-sm transition lg:hidden ${
+        menuIsOpen ? "fixed" : "hidden"
       }`}
       onClick={handleOnClick}
     ></div>

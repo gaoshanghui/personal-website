@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import Menu from './menu/menu';
-import MenuOverlay from './menu/menu-overlay';
-import Navigation from './navigation';
+import { useState } from "react";
+import Menu from "./menu/menu";
+import MenuOverlay from "./menu/menu-overlay";
+import Navigation from "./navigation";
 
 const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);

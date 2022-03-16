@@ -11,7 +11,7 @@ const SocialLink: React.FC<SocialLinkProps> = (props) => {
       rel="noreferrer"
       aria-label={props.ariaLabel}
     >
-      <span className="inline-block p-3 border border-gray-200 rounded-full">
+      <span className="inline-block rounded-full border border-gray-200 p-3">
         {props.children}
       </span>
     </a>

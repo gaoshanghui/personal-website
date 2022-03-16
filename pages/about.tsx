@@ -1,15 +1,15 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
-import Footer from '../components/footer';
-import Header from '../components/header';
-import ContainedButton from '../components/contained-button';
-import SectionTitle from '../components/section-title';
-import EducationInfo from '../components/education-info';
-import SocialLinks from '../components/social-links';
-import profilePicLarge from '../public/images/profile-pic-large.jpg';
-import profilePicSmall from '../public/images/profile-pic-small.jpg';
-import SkillInfo from '../components/skill-info';
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import Footer from "../components/footer";
+import Header from "../components/header";
+import ContainedButton from "../components/contained-button";
+import SectionTitle from "../components/section-title";
+import EducationInfo from "../components/education-info";
+import SocialLinks from "../components/social-links";
+import profilePicLarge from "../public/images/profile-pic-large.jpg";
+import profilePicSmall from "../public/images/profile-pic-small.jpg";
+import SkillInfo from "../components/skill-info";
 
 const About: NextPage = () => {
   return (
@@ -23,16 +23,16 @@ const About: NextPage = () => {
         />
       </Head>
       <Header />
-      <div className="p-5 lg:p-0 mt-[69px] max-w-[1040px] mx-auto">
-        <section className="mb-32 pt-16 lg:flex lg:justify-between lg:items-center lg:space-x-8 lg:pt-28">
+      <div className="mx-auto mt-[69px] max-w-[1040px] p-5 lg:p-0">
+        <section className="mb-32 pt-16 lg:flex lg:items-center lg:justify-between lg:space-x-8 lg:pt-28">
           <div className="lg:w-1/2">
-            <p className="font-sans-cn text-gray-900 font-bold text-2xl tracking-[0.12em] mb-10 ">
+            <p className="mb-10 font-sans-cn text-2xl font-bold tracking-[0.12em] text-slate-900 ">
               👋 你好！
             </p>
-            <h2 className="text-base lg:text-xl font-bold text-gray-900 mb-4 lg:mb-6">
+            <h2 className="mb-4 text-base font-bold text-slate-900 lg:mb-6 lg:text-xl">
               My name is Gao Shanghui.
             </h2>
-            <p className="text-sm text-gray-600 leading-7 mb-10 lg:text-base lg:leading-8">
+            <p className="mb-10 text-sm leading-7 text-slate-600 lg:text-base lg:leading-8">
               I am originally from China. After I finished my undergraduate
               studies, I chose to study abroad. I completed a graduate program
               in design at Kyushu University, and at the same time, I focused my
@@ -72,37 +72,37 @@ const About: NextPage = () => {
             <SkillInfo
               title="Design"
               skills={[
-                'Figma',
-                'XD',
-                'Sketch',
-                'InVision',
-                'Illustrator',
-                'Photoshop',
-                'InDesign',
+                "Figma",
+                "XD",
+                "Sketch",
+                "InVision",
+                "Illustrator",
+                "Photoshop",
+                "InDesign",
               ]}
             />
             <SkillInfo
               title="Engineering"
               skills={[
-                'HTML/CSS(SCSS)',
-                'JavaScript',
-                'TypeScript',
-                'React',
-                'NextJS',
-                'Git',
-                'WordPress',
+                "HTML/CSS(SCSS)",
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "NextJS",
+                "Git",
+                "WordPress",
               ]}
             />
             <SkillInfo
               title="Languages"
-              skills={['Chinese', 'English', 'Japanese']}
+              skills={["Chinese", "English", "Japanese"]}
             />
           </div>
         </section>
         <section className="mb-32">
           <SectionTitle text="Contact" />
-          <p className="text-sm text-gray-900 leading-7 mb-4 lg:text-base lg:leading-8">
-            Whether you have a question or just want to say hi,{' '}
+          <p className="mb-4 text-sm leading-7 text-slate-900 lg:text-base lg:leading-8">
+            Whether you have a question or just want to say hi,{" "}
             <br className="hidden lg:block" />I will try my best to get back to
             you!
           </p>

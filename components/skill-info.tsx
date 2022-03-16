@@ -1,4 +1,4 @@
-import Chip from './chip';
+import Chip from "./chip";
 
 interface SkillInfoProps {
   skills: string[];
@@ -8,7 +8,7 @@ interface SkillInfoProps {
 const SkillInfo: React.FC<SkillInfoProps> = (props) => {
   return (
     <div className="mb-8">
-      <p className="text-xl lg:text-2xl leading-7 lg:leading-8 text-gray-900 mb-4">
+      <p className="mb-4 text-xl leading-7 text-slate-900 lg:text-2xl lg:leading-8">
         {props.title}
       </p>
       <div>

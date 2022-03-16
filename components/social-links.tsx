@@ -1,12 +1,12 @@
-import SocialLink from './social-link';
+import SocialLink from "./social-link";
 
 const SocialLinks: React.FC = () => {
   return (
-    <div className="flex flex-col justify-center mb-10">
-      <p className="text-base text-center leading-6 font-bold mb-4">
+    <div className="mb-10 flex flex-col justify-center">
+      <p className="mb-4 text-center text-base font-bold leading-6">
         You can also find me at
       </p>
-      <div className="space-x-5 flex justify-center">
+      <div className="flex justify-center space-x-5">
         <SocialLink
           href="https://www.linkedin.com/in/shanghui-gao-b503b1227"
           ariaLabel="LinkedIn profile"

@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import { MailButton, LinkedinButton } from './outlined-button';
-import MenuButton from './menu/menu-button';
+import Link from "next/link";
+import { MailButton, LinkedinButton } from "./outlined-button";
+import MenuButton from "./menu/menu-button";
 
 interface NavigationProps {
   menuIsOpen: boolean;
@@ -13,42 +13,42 @@ const Navigation: React.FC<NavigationProps> = ({
 }) => {
   return (
     <div
-      className={`px-5 py-3 fixed top-0 left-0 z-20 w-full flex items-center border-b border-gray-300 transition ${
-        menuIsOpen ? 'bg-white' : 'bg-white bg-opacity-75 backdrop-blur-lg'
+      className={`fixed top-0 left-0 z-20 flex w-full items-center px-5 py-3 drop-shadow-[0_1px_0px_rgba(0,0,0,0.12)] transition lg:py-5 ${
+        menuIsOpen ? "bg-white" : "bg-white bg-opacity-95 backdrop-blur-lg"
       }`}
     >
-      <nav className="w-full flex justify-between lg:grid lg:grid-cols-3 lg:w-11/12 mx-auto">
-        <div className="hidden lg:flex gap-8 items-center">
+      <nav className="mx-auto flex w-full justify-between lg:grid lg:w-11/12 lg:grid-cols-3">
+        <div className="hidden items-center gap-8 lg:flex">
           <Link href="/">
-            <a className="text-gray-900 hover:text-blue-600 transition duration-300 text-base leading-6 font-bold">
+            <a className="text-base font-bold leading-6 text-slate-900 transition duration-300 hover:text-blue-600">
               Projects
             </a>
           </Link>
           <Link href="/about">
-            <a className="text-gray-900 hover:text-blue-600 transition duration-300 text-base leading-6 font-bold">
+            <a className="text-base font-bold leading-6 text-slate-900 transition duration-300 hover:text-blue-600">
               About
             </a>
           </Link>
           <a
-            className="text-gray-900 hover:text-blue-600 transition duration-300 text-base leading-6 font-bold"
+            className="text-base font-bold leading-6 text-slate-900 transition duration-300 hover:text-blue-600"
             target="_blank"
-            href="https://twitter.com/"
+            href="/"
             rel="noopener noreferrer"
           >
             Resume
           </a>
         </div>
         <Link href="/">
-          <a className="flex flex-col h-full justify-center">
-            <h1 className="text-lg lg:text-center leading-7 font-black text-gray-900">
+          <a className="flex h-full flex-col justify-center">
+            <h1 className="text-lg font-black leading-7 text-slate-900 lg:mb-1 lg:text-center lg:text-xl">
               Gao Shanghui
             </h1>
-            <p className="text-xs lg:text-center leading-4 font-normal text-gray-600">
-              UX designer and Web Developer
+            <p className="text-xs font-normal leading-4 text-slate-600 lg:text-center">
+              UX, UI and WEB
             </p>
           </a>
         </Link>
-        <div className="flex justify-end items-center gap-4">
+        <div className="flex items-center justify-end gap-4">
           <a href="mailto:mail.gaoshanghui@gmail.com">
             <MailButton />
           </a>

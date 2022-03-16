@@ -14,11 +14,11 @@ const Home: NextPage = () => {
         <meta charSet="utf-8" />
         <meta
           name="description"
-          content="Hello, my name is Gao Shanghui. It is the portfolio to show my recent projects."
+          content="Hello, my name is Gao Shanghui. This is the portfolio to show my recent projects."
         />
       </Head>
       <Header />
-      <div className="p-5 space-y-5 mt-[69px]">
+      <div className="mt-[69px] space-y-5 p-5">
         <Card
           title="Pomoflow"
           media={projectCover1}
