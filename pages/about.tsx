@@ -23,9 +23,9 @@ const About: NextPage = () => {
         />
       </Head>
       <Header />
-      <div className="mx-auto mt-[68px] max-w-[1040px] p-5 lg:p-0">
+      <div className="mx-auto mt-[68px] max-w-[1040px] p-5 lg:mt-[88px] lg:p-0">
         <section className="mb-[120px] pt-16 lg:mb-44 lg:pt-28">
-          <p className="mb-10 font-sans-cn text-2xl font-bold tracking-[0.12em] text-slate-900 ">
+          <p className="mb-10 font-sans-cn text-2xl font-bold tracking-[0.12em] text-slate-900">
             👋 你好！
           </p>
           <div className="lg:flex lg:items-start lg:justify-between">
@@ -49,8 +49,8 @@ const About: NextPage = () => {
                   design, user interface design, and modern JavaScript-based web
                   development. I love the design and I&apos;m excited about new
                   technologies. I have always believed that design and
-                  technology is one thing, and that their creative collaboration
-                  is the way to create better solutions.
+                  development is one thing, and that their creative
+                  collaboration is the way to create better solutions.
                 </p>
               </div>
             </div>

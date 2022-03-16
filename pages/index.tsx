@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         />
       </Head>
       <Header />
-      <div className="mt-[68px] space-y-5 p-5">
+      <div className="mt-[68px] space-y-5 p-5 lg:mt-[88px]">
         <Card
           title="Caffy"
           media={projectCaffyCover}
