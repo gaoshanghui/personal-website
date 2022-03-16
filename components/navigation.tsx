@@ -29,14 +29,14 @@ const Navigation: React.FC<NavigationProps> = ({
               About
             </a>
           </Link>
-          <a
+          {/* <a
             className="text-base font-bold leading-6 text-slate-900 transition duration-300 hover:text-blue-600"
             target="_blank"
-            href="/"
+            href="https://github.com/gaoshanghui"
             rel="noopener noreferrer"
           >
             Resume
-          </a>
+          </a> */}
         </div>
         <Link href="/">
           <a className="flex h-full flex-col justify-center">
