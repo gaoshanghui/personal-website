@@ -15,11 +15,11 @@ const Home: NextPage = () => {
         <meta charSet="utf-8" />
         <meta
           name="description"
-          content="Hello, my name is Gao Shanghui. This is the portfolio to show my recent projects."
+          content="Hello, my name is Gao Shanghui. This is the portfolio to show my recent projects. I have always believed that design and technology is one thing, and that their creative collaboration is the way to create better solutions."
         />
       </Head>
       <Header />
-      <div className="mt-[69px] space-y-5 p-5">
+      <div className="mt-[68px] space-y-5 p-5">
         <Card
           title="Caffy"
           media={projectCaffyCover}

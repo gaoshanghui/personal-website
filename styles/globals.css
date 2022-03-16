@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+
+.headline-2 {
+  @apply text-[32px] font-black leading-10 lg:text-[40px];
+}
+
+.headline-4 {
+  @apply text-base font-extrabold leading-8 tracking-[0.01em];
+}
+
+.body-1 {
+  @apply text-base font-normal leading-7 tracking-[0.01em];
+}
+
+@tailwind utilities;

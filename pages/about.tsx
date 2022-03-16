@@ -4,11 +4,11 @@ import Image from "next/image";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import ContainedButton from "../components/contained-button";
-import SectionTitle from "../components/section-title";
+import Headline2 from "../components/headline2";
 import EducationInfo from "../components/education-info";
 import SocialLinks from "../components/social-links";
-import profilePicLarge from "../public/images/profile-pic-large.jpg";
-import profilePicSmall from "../public/images/profile-pic-small.jpg";
+import profileImgLarge from "../public/images/profile.jpg";
+import profileImg from "../public/images/profile-small.jpg";
 import SkillInfo from "../components/skill-info";
 
 const About: NextPage = () => {
@@ -19,43 +19,62 @@ const About: NextPage = () => {
         <meta charSet="utf-8" />
         <meta
           name="description"
-          content="Hello, my name is Gao Shanghui. It is the portfolio to show my recent projects."
+          content="Hello, my name is Gao Shanghui. Whether you have a question or just want to say hi, I will try my best to get back to you!"
         />
       </Head>
       <Header />
-      <div className="mx-auto mt-[69px] max-w-[1040px] p-5 lg:p-0">
-        <section className="mb-32 pt-16 lg:flex lg:items-center lg:justify-between lg:space-x-8 lg:pt-28">
-          <div className="lg:w-1/2">
-            <p className="mb-10 font-sans-cn text-2xl font-bold tracking-[0.12em] text-slate-900 ">
-              👋 你好！
-            </p>
-            <h2 className="mb-4 text-base font-bold text-slate-900 lg:mb-6 lg:text-xl">
-              My name is Gao Shanghui.
-            </h2>
-            <p className="mb-10 text-sm leading-7 text-slate-600 lg:text-base lg:leading-8">
-              I am originally from China. After I finished my undergraduate
-              studies, I chose to study abroad. I completed a graduate program
-              in design at Kyushu University, and at the same time, I focused my
-              research on machine learning and data mining. <br />
-              <br />
-              In the past few years, I have dived into language learning, UI
-              design, and Web development. I believe that creative collaboration
-              between design and technology is the way that to create better
-              solutions.
-            </p>
-          </div>
-          <div className="lg:w-1/2 lg:max-w-[352px]">
-            <div className="hidden lg:block">
-              <Image src={profilePicLarge} alt="My photo" />
+      <div className="mx-auto mt-[68px] max-w-[1040px] p-5 lg:p-0">
+        <section className="mb-[120px] pt-16 lg:mb-44 lg:pt-28">
+          <p className="mb-10 font-sans-cn text-2xl font-bold tracking-[0.12em] text-slate-900 ">
+            👋 你好！
+          </p>
+          <div className="lg:flex lg:items-start lg:justify-between">
+            <div className="w-full lg:max-w-[552px]">
+              <div className="mb-6">
+                <h2 className="headline-4 text-slate-900">
+                  My name is Gao Shanghui.
+                </h2>
+              </div>
+              <div className="mb-6">
+                <p className="body-1 text-slate-600">
+                  I came from China. After I finished my undergraduate studies,
+                  I chose to study abroad. I completed a graduate program in
+                  design at Kyushu University. At the same time, my research
+                  focused on using machine learning to uncover data patterns on
+                  social networking platforms and exploring approaches to
+                  present them in an engaging and easy-to-understand way.
+                  <br />
+                  <br />
+                  For the past few years, I have been studying user experience
+                  design, user interface design, and modern JavaScript-based web
+                  development. I love the design and I'm excited about new
+                  technologies. I have always believed that design and
+                  technology is one thing, and that their creative collaboration
+                  is the way to create better solutions.
+                </p>
+              </div>
             </div>
-            <div className="block lg:hidden">
-              <Image src={profilePicSmall} alt="My photo" />
+            <div className="relative block max-w-lg overflow-hidden rounded-lg drop-shadow lg:hidden">
+              <Image
+                src={profileImg}
+                alt="My profile image"
+                layout="responsive"
+                objectFit="cover"
+              />
+            </div>
+            <div className="relative hidden w-1/2 max-w-[360px] overflow-hidden rounded-lg drop-shadow lg:block">
+              <Image
+                src={profileImgLarge}
+                alt="My profile image"
+                layout="responsive"
+                objectFit="cover"
+              />
             </div>
           </div>
         </section>
         <section className="lg:flex">
           <div className="mb-32 lg:w-1/2">
-            <SectionTitle text="Education" />
+            <Headline2 text="Education" />
             <EducationInfo
               school="Kyushu University"
               degree="Master of Design"
@@ -68,7 +87,7 @@ const About: NextPage = () => {
             />
           </div>
           <div className="mb-32 lg:w-1/2">
-            <SectionTitle text="Skills" />
+            <Headline2 text="Skills" />
             <SkillInfo
               title="Design"
               skills={[
@@ -100,8 +119,8 @@ const About: NextPage = () => {
           </div>
         </section>
         <section className="mb-32">
-          <SectionTitle text="Contact" />
-          <p className="mb-4 text-sm leading-7 text-slate-900 lg:text-base lg:leading-8">
+          <Headline2 text="Contact" />
+          <p className="body-1 mb-6 text-slate-600">
             Whether you have a question or just want to say hi,{" "}
             <br className="hidden lg:block" />I will try my best to get back to
             you!
