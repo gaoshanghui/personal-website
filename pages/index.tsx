@@ -3,7 +3,8 @@ import Head from "next/head";
 import Card from "../components/card";
 import Footer from "../components/footer";
 import Header from "../components/header";
-import projectCover1 from "../public/images/project-covers/project-cover-1.jpg";
+import projectCaffyCover from "../public/images/project-cover-caffy.jpg";
+import projectCaffyCoverSmall from "../public/images/project-cover-caffy-small.jpg";
 import projectCover2 from "../public/images/project-covers/project-cover-2.jpg";
 
 const Home: NextPage = () => {
@@ -20,16 +21,20 @@ const Home: NextPage = () => {
       <Header />
       <div className="mt-[69px] space-y-5 p-5">
         <Card
-          title="Pomoflow"
-          media={projectCover1}
-          description="A web application to track your daily activities."
+          title="Caffy"
+          media={projectCaffyCover}
+          mediaSmall={projectCaffyCoverSmall}
+          description="Design a mobile web app for a cafe."
           link="/"
+          priority={true}
         />
         <Card
-          title="Circle"
+          title="Project name"
           media={projectCover2}
-          description="A web application to track your daily activities."
+          mediaSmall={projectCover2}
+          description="The simple description about the project."
           link="/"
+          priority={false}
         />
       </div>
       <Footer />

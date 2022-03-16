@@ -13,9 +13,9 @@ module.exports = {
       },
       backgroundImage: {
         "project-overlay-small":
-          "linear-gradient(14.83deg, rgba(15, 23, 42, 0.51) 2.1%, rgba(15, 23, 42, 0) 67.27%);",
+          "linear-gradient(16.24deg, rgba(15, 23, 42, 0.88) 2.27%, rgba(15, 23, 42, 0) 97.59%);",
         "project-overlay-large":
-          "linear-gradient(90deg, rgba(15, 23, 42, 0.590984) -0.06%, rgba(15, 23, 42, 0) 58.99%);",
+          "linear-gradient(90deg, #0F172A -40.04%, rgba(15, 23, 42, 0.37) 44.21%, rgba(15, 23, 42, 0) 100%);",
       },
     },
   },
