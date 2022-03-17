@@ -7,7 +7,7 @@ interface MenuProps {
 const Menu: React.FC<MenuProps> = ({ menuIsOpen }) => {
   return (
     <div
-      className={`fixed top-[68px] z-20 w-full bg-white pt-16 pb-20 pl-[23%] lg:hidden ${
+      className={`fixed top-[68px] z-30 w-full bg-white pt-16 pb-20 pl-[23%] lg:hidden ${
         menuIsOpen ? "block " : "hidden"
       }`}
     >

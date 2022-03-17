@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           media={projectCaffyCover}
           mediaSmall={projectCaffyCoverSmall}
           description="Design a mobile web app for a cafe."
-          link="/"
+          link="/projects/caffy"
           priority={true}
         />
         <Card

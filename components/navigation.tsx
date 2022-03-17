@@ -13,7 +13,7 @@ const Navigation: React.FC<NavigationProps> = ({
 }) => {
   return (
     <div
-      className={`fixed top-0 left-0 z-20 flex w-full items-center px-5 py-3 drop-shadow-[0_1px_0px_rgba(0,0,0,0.12)] transition lg:py-5 ${
+      className={`fixed top-0 left-0 z-30 flex w-full items-center px-5 py-3 drop-shadow-[0_1px_0px_rgba(0,0,0,0.12)] transition lg:py-5 ${
         menuIsOpen ? "bg-white" : "bg-white bg-opacity-95 backdrop-blur-lg"
       }`}
     >
