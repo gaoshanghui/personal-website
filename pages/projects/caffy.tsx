@@ -15,6 +15,9 @@ import userFlowImg from "../../public/images/caffy-userflow.jpg";
 import paperWireframesImg from "../../public/images/caffy-paper-wireframes.jpg";
 import digitalWireframesImg from "../../public/images/caffy-digital-wireframes.jpg";
 import lowFiPrototypeImg from "../../public/images/caffy-low-fi-prototype.jpg";
+import styleGuideImg from "../../public/images/caffy-style-guide.jpg";
+import muckupsImg1 from "../../public/images/caffy-muckups-1.jpg";
+import muckupsImg2 from "../../public/images/caffy-muckups-2.jpg";
 
 const Caffy: NextPage = () => {
   return (
@@ -50,9 +53,9 @@ const Caffy: NextPage = () => {
         <h2 className="headline-2 mb-8 text-center">Project Overview</h2>
         <p className="body-1 text-center text-slate-600">
           Caffy is a Mobile Web Application designed for cafes. In the current
-          small-scale cafe business, online ordering either doesn't exist or is
-          very outdated. Caffy serves information about the shop while providing
-          an online ordering feature to improve the user experience.
+          small-scale cafe business, online ordering either doesn&apos;t exist
+          or is very outdated. Caffy serves information about the shop while
+          providing an online ordering feature to improve the user experience.
         </p>
         <div className="mt-11 space-y-10">
           <div className="mx-auto max-w-[260px]">
@@ -334,7 +337,7 @@ const Caffy: NextPage = () => {
             aspects of the mockups needed refining.
           </p>
           <div className="space-y-4">
-            <div className="rounded-lg border-[1px] border-slate-300 bg-[#fafaf9] p-4">
+            <div className="rounded-lg border-[1px] border-slate-300 bg-[#fafaf9] py-4 px-6">
               <h4 className="headline-4 mb-2 text-slate-900">
                 Round 1 findings
               </h4>
@@ -352,7 +355,7 @@ const Caffy: NextPage = () => {
                 </li>
               </ul>
             </div>
-            <div className="rounded-lg border border-slate-300 bg-[#fafaf9] p-4">
+            <div className="rounded-lg border border-slate-300 bg-[#fafaf9] py-4 px-6">
               <h4 className="headline-4 mb-2 text-slate-900">
                 Round 2 findings
               </h4>
@@ -369,6 +372,65 @@ const Caffy: NextPage = () => {
                   </p>
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ================================ */}
+      {/* Refining the design */}
+      {/* ================================ */}
+      <div className="pt-[120px]">
+        <div className="px-5">
+          <h2 className="headline-2 text-slate-900">Refining the design</h2>
+        </div>
+        <div className="px-5 pt-20">
+          <h3 className="headline-3 mb-6 text-slate-900">Usability study</h3>
+          {/* Responsive image block */}
+          <div>
+            <div>
+              {/* image part */}
+              <div className="relative overflow-hidden rounded-lg border border-slate-300">
+                <Image
+                  src={styleGuideImg}
+                  alt="style guide"
+                  objectFit="cover"
+                  layout="responsive"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="px-5 pt-20">
+          <h3 className="headline-3 mb-6 text-slate-900">Muckups</h3>
+          <div className="space-y-4">
+            {/* Responsive image block */}
+            <div>
+              <div>
+                {/* image part */}
+                <div className="relative overflow-hidden rounded-lg border border-slate-300">
+                  <Image
+                    src={muckupsImg1}
+                    alt="muckups 1"
+                    objectFit="cover"
+                    layout="responsive"
+                  />
+                </div>
+              </div>
+            </div>
+            {/* Responsive image block */}
+            <div>
+              <div>
+                {/* image part */}
+                <div className="relative overflow-hidden rounded-lg border border-slate-300">
+                  <Image
+                    src={muckupsImg2}
+                    alt="muckups 2"
+                    objectFit="cover"
+                    layout="responsive"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
