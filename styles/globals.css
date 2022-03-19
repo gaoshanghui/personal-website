@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 
+.headline-1 {
+  @apply text-[56px] font-black leading-[68px];
+}
+
 .headline-2 {
   @apply text-[32px] font-black leading-10 lg:text-[40px];
 }
@@ -19,6 +23,10 @@
 
 .body-2 {
   @apply text-sm font-normal leading-6 tracking-[0.01em];
+}
+
+.anchor {
+  @apply invisible relative top-[-68px] block lg:top-[-88px];
 }
 
 @tailwind utilities;

@@ -3,14 +3,17 @@ import Head from "next/head";
 import Image from "next/image";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
+import InPageNavigation from "../../components/in-page-navigation";
 
 // image resources
 import overViewImg from "../../public/images/caffy-overview.jpg";
+import overViewLargeImg from "../../public/images/caffy-overview-large.jpg";
 import personaProfileImg from "../../public/images/caffy-persona-profile.jpg";
 import personaCommentImg from "../../public/images/caffy-persona-comment.jpg";
 import personaGoalsImg from "../../public/images/caffy-persona-goals.jpg";
 import personaFrustrationsImg from "../../public/images/caffy-persona-frustrations.jpg";
 import personaBioImg from "../../public/images/caffy-persona-bio.jpg";
+import personaLargeImg from "../../public/images/caffy-persona-large.png";
 import userFlowImg from "../../public/images/caffy-userflow.jpg";
 import paperWireframesImg from "../../public/images/caffy-paper-wireframes.jpg";
 import digitalWireframesImg from "../../public/images/caffy-digital-wireframes.jpg";
@@ -21,196 +24,235 @@ import muckupsImg2 from "../../public/images/caffy-muckups-2.jpg";
 
 const Caffy: NextPage = () => {
   return (
-    <div className="relative">
+    <div>
       <Head>
         <title>Case Study | Gao Shanghui</title>
         <meta charSet="utf-8" />
         <meta
           name="description"
-          content="Hello, my name is Gao Shanghui. Whether you have a question or just want to say hi, I will try my best to get back to you!"
+          content="This is the case study of Caffy. Caffy is a Mobile Web application designed for cafes. Caffy serves information about the shop while providing an online ordering feature to improve the user experience."
         />
       </Head>
       <Header />
+      {/* ==================== */}
+      {/* Project Hero */}
+      {/* ==================== */}
+      {/* Project hero */}
       <div className="mx-auto mt-[68px] max-w-[1040px] lg:mt-[88px] lg:p-0">
-        <div className="px-5 py-12">
-          <h2 className="mb-2 text-[40px] font-black leading-[48px] tracking-[0.01em] text-slate-900">
-            Caffy
-          </h2>
-          <p className="body-1 text-slate-600">
-            Design a Mobile Web app for a cafe
-          </p>
+        <div className="lg:hidden">
+          <div className="px-5 py-12">
+            <h2 className="mb-2 text-[40px] font-black leading-[48px] tracking-[0.01em] text-slate-900">
+              Caffy
+            </h2>
+            <p className="body-1 text-slate-600">
+              Design a Mobile Web app for a cafe
+            </p>
+          </div>
+          <div>
+            <Image
+              src={overViewImg}
+              alt="Caffy application screenshots"
+              layout="responsive"
+              objectFit="cover"
+            />
+          </div>
         </div>
       </div>
-      <Image
-        src={overViewImg}
-        alt="Caffy application screenshots"
-        layout="responsive"
-        objectFit="cover"
-      />
+      {/* Project hero - large */}
+      <div className="mt-[68px] hidden lg:mt-[88px] lg:block lg:p-0">
+        <div className="bg-[#111827]">
+          <div className="relative mx-auto max-w-[1440px]">
+            <Image
+              src={overViewLargeImg}
+              alt="Caffy application screenshots"
+              layout="responsive"
+              objectFit="cover"
+            />
+            <div className="absolute top-0 left-0 h-full w-full bg-[#0F172A] opacity-40"></div>
+            <div className="absolute top-[calc(50%-54px)] left-[13%]">
+              <div>
+                <h2 className="headline-1 mb-2 text-white drop-shadow-md">
+                  Caffy
+                </h2>
+                <p className="text-xl leading-8 text-white drop-shadow-md">
+                  Design a Mobile Web app for a cafe
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Project Overview */}
-      <div className="bg-[#FAFAF9] px-5 py-24">
-        <h2 className="headline-2 mb-8 text-center">Project Overview</h2>
-        <p className="body-1 text-center text-slate-600">
-          Caffy is a Mobile Web Application designed for cafes. In the current
-          small-scale cafe business, online ordering either doesn&apos;t exist
-          or is very outdated. Caffy serves information about the shop while
-          providing an online ordering feature to improve the user experience.
-        </p>
-        <div className="mt-11 space-y-10">
-          <div className="mx-auto max-w-[260px]">
-            <h4 className="headline-4 mb-1 text-center">Project Name</h4>
-            <p className="body-1 text-center text-slate-600">
-              Caffy
-              <br />
-              Mobile Web app
-            </p>
-          </div>
-          <div className="mx-auto max-w-[260px]">
-            <h4 className="headline-4 mb-1 text-center">Duration</h4>
-            <p className="body-1 text-center text-slate-600">
-              2021.12 - 2022.02
-              <br />
-              (3 months)
-            </p>
-          </div>
-          <div className="mx-auto max-w-[260px]">
-            <h4 className="headline-4 mb-1 text-center">Role</h4>
-            <p className="body-1 text-center text-slate-600">UX Designer</p>
-          </div>
-          <div className="mx-auto max-w-[260px]">
-            <h4 className="headline-4 mb-1 text-center">Responsibilities</h4>
-            <p className="body-1 text-center text-slate-600">
-              User Research, wireframing, prototyping, usability studies
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* In page navigation */}
-      <div className="sticky top-[68px] z-10 overflow-scroll bg-white bg-opacity-95 drop-shadow-[0_1px_0px_rgba(0,0,0,0.12)] backdrop-blur-lg">
-        <div className="flex p-5">
-          {/* In page navigation - item */}
-          <div className="mr-6 flex w-fit items-center">
-            <div className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-400">
-              <span className="text-sm font-bold leading-3 text-white">1</span>
-            </div>
-            <p className="ml-3 mr-6 whitespace-nowrap text-sm font-bold leading-6 tracking-[0.01em] text-slate-900">
-              Understanding the user
-            </p>
-            <div className="h-[1px] w-12 bg-slate-300"></div>
-          </div>
-          {/* In page navigation - item */}
-          <div className="mr-6 flex w-fit items-center">
-            <div className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-400">
-              <span className="text-sm font-bold leading-3 text-white">2</span>
-            </div>
-            <p className="ml-3 mr-6 whitespace-nowrap text-sm font-bold leading-6 tracking-[0.01em] text-slate-900">
-              Starting the design
-            </p>
-            <div className="h-[1px] w-12 bg-slate-300"></div>
-          </div>
-          {/* In page navigation - item */}
-          <div className="mr-6 flex w-fit items-center">
-            <div className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-400">
-              <span className="text-sm font-bold leading-3 text-white">3</span>
-            </div>
-            <p className="ml-3 mr-6 whitespace-nowrap text-sm font-bold leading-6 tracking-[0.01em] text-slate-900">
-              Refining the design
-            </p>
-            <div className="h-[1px] w-12 bg-slate-300"></div>
-          </div>
-          {/* In page navigation - item */}
-          <div className="mr-6 flex w-fit items-center">
-            <div className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-400">
-              <span className="text-sm font-bold leading-3 text-white">4</span>
-            </div>
-            <p className="ml-3 mr-6 whitespace-nowrap text-sm font-bold leading-6 tracking-[0.01em] text-slate-900">
-              Going forward
-            </p>
-            {/* <div className="h-[1px] w-12 bg-slate-300"></div> */}
-          </div>
-        </div>
-      </div>
-
-      <div className="pt-[120px]">
-        <div className="px-5">
-          <h2 className="headline-2 mb-8 text-slate-900">
-            Understanding the user
-          </h2>
-          <p className="body-1 text-slate-600">
-            I conducted interviews to understand the users I am designing for
-            and their needs. A primary user group identified was working adults
-            who used the cafe to rest and work. Research revealed that shop
-            environment and convenience are important to them. Environment
-            aspects include the availability of Wi-Fi, sofas and the overall
-            atmosphere. In terms of convenience, aspects such as waiting time
-            and the ability to order easily and quickly became factors in
-            whether they went to the shop.
+      <div className="bg-[#FAFAF9] px-5 py-24 lg:py-32">
+        <div className="mx-auto max-w-[1040px]">
+          <h2 className="headline-2 mb-8 text-center">Project Overview</h2>
+          <p className="body-1 mx-auto max-w-[760px] text-center text-slate-600">
+            Caffy is a Mobile Web Application designed for cafes. In the current
+            small-scale cafe business, online ordering either doesn&apos;t exist
+            or is very outdated. Caffy serves information about the shop while
+            providing an online ordering feature to improve the user experience.
           </p>
-        </div>
-        <div className="px-5 pt-20">
-          <h3 className="headline-3 mb-6 text-slate-900">Pain points</h3>
-          <div className="space-y-4">
-            <div className="rounded-lg border-[1px] border-slate-300 bg-[#fafaf9] p-4">
-              <h4 className="headline-4 mb-2 text-slate-900">Environment</h4>
-              <p className="body-1 text-slate-600">
-                The environment and ambience of the actual shop is far from what
-                one would expect.
+          <div className="mt-16 space-y-10 lg:mt-20 lg:flex lg:items-start lg:space-y-0">
+            <div className="mx-auto max-w-[260px]">
+              <h4 className="headline-4 mb-1 text-center">Project Name</h4>
+              <p className="body-1 text-center text-slate-600">
+                Caffy
+                <br />
+                Mobile Web app
               </p>
             </div>
-            <div className="rounded-lg border border-slate-300 bg-[#fafaf9] p-4">
-              <h4 className="headline-4 mb-2 text-slate-900">Convenience</h4>
-              <p className="body-1 text-slate-600">
-                Orders must be placed in line at the cashier. Takeaway customers
-                cannot order in advance.
+            <div className="mx-auto max-w-[260px]">
+              <h4 className="headline-4 mb-1 text-center">Duration</h4>
+              <p className="body-1 text-center text-slate-600">
+                2021.12 - 2022.02
+                <br />
+                (3 months)
+              </p>
+            </div>
+            <div className="mx-auto max-w-[260px]">
+              <h4 className="headline-4 mb-1 text-center">Role</h4>
+              <p className="body-1 text-center text-slate-600">UX Designer</p>
+            </div>
+            <div className="mx-auto max-w-[260px]">
+              <h4 className="headline-4 mb-1 text-center">Responsibilities</h4>
+              <p className="body-1 text-center text-slate-600">
+                User Research, wireframing, prototyping, usability studies
               </p>
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="px-5 pt-20">
-          <h3 className="headline-3 mb-6 text-slate-900">Persona</h3>
-          <div className="space-y-4">
-            <div className="relative overflow-hidden rounded-lg border border-slate-300">
+      <InPageNavigation
+        steps={[
+          {
+            title: "Understanding the user",
+            href: "#Understanding-the-user",
+          },
+          {
+            title: "Starting the design",
+            href: "#Starting-the-design",
+          },
+          {
+            title: "Refining the design",
+            href: "#Refining-the-design",
+          },
+          {
+            title: "Going forward",
+            href: "#Going-forward",
+          },
+        ]}
+      />
+
+      {/* ================================ */}
+      {/* Understanding the user */}
+      {/* ================================ */}
+      <div id="Understanding-the-user" className="anchor"></div>
+      <div className="pt-[120px] lg:pt-44">
+        <div className="mx-auto max-w-[1040px]">
+          <div className="px-5">
+            <h2 className="headline-2 mb-8 text-slate-900 lg:text-center">
+              Understanding the user
+            </h2>
+            <p className="body-1 max-w-[760px] text-slate-600 lg:mx-auto lg:text-center">
+              I conducted interviews to understand the users I am designing for
+              and their needs. A primary user group identified was working
+              adults who used the cafe to rest and work.
+            </p>
+            <br />
+            <p className="body-1 max-w-[760px] text-slate-600 lg:mx-auto lg:text-center">
+              Research revealed that shop environment and convenience are
+              important to them. Environment aspects include the availability of
+              Wi-Fi, sofas and the overall atmosphere. In terms of convenience,
+              aspects such as waiting time and the ability to order easily and
+              quickly became factors in whether they went to the shop.
+            </p>
+          </div>
+
+          {/* Pain points */}
+          <div className="px-5 pt-20 lg:pt-28">
+            <h3 className="headline-3 mb-6 text-slate-900 lg:text-center">
+              Pain points
+            </h3>
+            <div className="space-y-4 lg:flex lg:justify-center lg:space-y-0 lg:space-x-4">
+              <div className="max-w-md rounded-lg border border-slate-300 bg-[#fafaf9] p-4">
+                <h4 className="headline-4 mb-2 text-slate-900 lg:text-center">
+                  Environment
+                </h4>
+                <p className="body-1 text-slate-600 lg:text-center">
+                  The environment and ambience of the actual shop is far from
+                  what one would expect.
+                </p>
+              </div>
+              <div className="max-w-md rounded-lg border border-slate-300 bg-[#fafaf9] p-4">
+                <h4 className="headline-4 mb-2 text-slate-900 lg:text-center">
+                  Convenience
+                </h4>
+                <p className="body-1 text-slate-600 lg:text-center">
+                  Orders must be placed in line at the cashier. Takeaway
+                  customers cannot order in advance.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Persona */}
+          <div className="px-5 pt-20 lg:pt-28">
+            <h3 className="headline-3 mb-6 text-slate-900 lg:text-center">
+              Persona
+            </h3>
+            <div className="hidden overflow-hidden rounded-lg border border-slate-300 lg:block">
               <Image
-                src={personaProfileImg}
-                alt="Persona wang's basic information"
+                src={personaLargeImg}
+                alt="Wang's persona"
                 layout="responsive"
                 objectFit="cover"
               />
             </div>
-            <div className="relative overflow-hidden rounded-lg border border-slate-300">
-              <Image
-                src={personaCommentImg}
-                alt="Persona wang's comment"
-                layout="responsive"
-                objectFit="cover"
-              />
-            </div>
-            <div className="relative overflow-hidden rounded-lg border border-slate-300">
-              <Image
-                src={personaGoalsImg}
-                alt="Persona wang's goals"
-                layout="responsive"
-                objectFit="cover"
-              />
-            </div>
-            <div className="relative overflow-hidden rounded-lg border border-slate-300">
-              <Image
-                src={personaFrustrationsImg}
-                alt="Persona wang's frustrations"
-                layout="responsive"
-                objectFit="cover"
-              />
-            </div>
-            <div className="relative overflow-hidden rounded-lg border border-slate-300">
-              <Image
-                src={personaBioImg}
-                alt="Persona wang's bio"
-                layout="responsive"
-                objectFit="cover"
-              />
+
+            {/* Persona - vertical align */}
+            <div className="space-y-4 lg:hidden">
+              <div className="relative overflow-hidden rounded-lg border border-slate-300">
+                <Image
+                  src={personaProfileImg}
+                  alt="Persona wang's basic information"
+                  layout="responsive"
+                  objectFit="cover"
+                />
+              </div>
+              <div className="relative overflow-hidden rounded-lg border border-slate-300">
+                <Image
+                  src={personaCommentImg}
+                  alt="Persona wang's comment"
+                  layout="responsive"
+                  objectFit="cover"
+                />
+              </div>
+              <div className="relative overflow-hidden rounded-lg border border-slate-300">
+                <Image
+                  src={personaGoalsImg}
+                  alt="Persona wang's goals"
+                  layout="responsive"
+                  objectFit="cover"
+                />
+              </div>
+              <div className="relative overflow-hidden rounded-lg border border-slate-300">
+                <Image
+                  src={personaFrustrationsImg}
+                  alt="Persona wang's frustrations"
+                  layout="responsive"
+                  objectFit="cover"
+                />
+              </div>
+              <div className="relative overflow-hidden rounded-lg border border-slate-300">
+                <Image
+                  src={personaBioImg}
+                  alt="Persona wang's bio"
+                  layout="responsive"
+                  objectFit="cover"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -219,6 +261,7 @@ const Caffy: NextPage = () => {
       {/* ================================ */}
       {/* Starting the design */}
       {/* ================================ */}
+      <div id="Starting-the-design" className="anchor"></div>
       <div className="pt-[120px]">
         <div className="px-5">
           <h2 className="headline-2 mb-8 text-slate-900">
@@ -380,6 +423,7 @@ const Caffy: NextPage = () => {
       {/* ================================ */}
       {/* Refining the design */}
       {/* ================================ */}
+      <div id="Refining-the-design" className="anchor"></div>
       <div className="pt-[120px]">
         <div className="px-5">
           <h2 className="headline-2 text-slate-900">Refining the design</h2>
