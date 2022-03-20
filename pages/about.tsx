@@ -4,7 +4,7 @@ import Image from "next/image";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import ContainedButton from "../components/contained-button";
-import Headline2 from "../components/headline2";
+import Headline2 from "../components/headline-2";
 import EducationInfo from "../components/education-info";
 import SocialLinks from "../components/social-links";
 import profileImgLarge from "../public/images/profile.jpg";
@@ -74,7 +74,8 @@ const About: NextPage = () => {
         </section>
         <section className="lg:flex">
           <div className="mb-32 lg:w-1/2">
-            <Headline2 text="Education" />
+            <Headline2>Education</Headline2>
+            {/* <Headline2 text="Education" /> */}
             <EducationInfo
               school="Kyushu University"
               degree="Master of Design"
@@ -87,7 +88,8 @@ const About: NextPage = () => {
             />
           </div>
           <div className="mb-32 lg:w-1/2">
-            <Headline2 text="Skills" />
+            <Headline2>Skills</Headline2>
+            {/* <Headline2 text="Skills" /> */}
             <SkillInfo
               title="Design"
               skills={[
@@ -119,7 +121,8 @@ const About: NextPage = () => {
           </div>
         </section>
         <section className="mb-32">
-          <Headline2 text="Contact" />
+          <Headline2>Contact</Headline2>
+          {/* <Headline2 text="Contact" /> */}
           <p className="body-1 mb-6 text-slate-600">
             Whether you have a question or just want to say hi,{" "}
             <br className="hidden lg:block" />I will try my best to get back to

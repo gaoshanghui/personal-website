@@ -12,7 +12,7 @@ interface InPageNavigationProps {
 const InPageNavigation: React.FC<InPageNavigationProps> = ({ steps }) => {
   return (
     <div className="sticky top-[68px] z-10 overflow-scroll bg-white bg-opacity-95 drop-shadow-[0_1px_0px_rgba(0,0,0,0.12)] backdrop-blur-lg lg:top-[88px]">
-      <div className="mx-auto max-w-[1040px]">
+      <div className="mx-auto max-w-[1040px] overflow-auto">
         <div className="flex p-5">
           {steps.map((step, index) => {
             return (
