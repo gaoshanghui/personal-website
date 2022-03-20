@@ -4,9 +4,12 @@ import Image from "next/image";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
 import InPageNavigation from "../../components/in-page-navigation";
-import Section from "../../components/section";
-import Headline2 from "../../components/headline-2";
 import Anchor from "../../components/anchor";
+import Section from "../../components/section";
+
+// Typography
+import Headline2 from "../../components/headline-2";
+import Headline3 from "../../components/headline-3";
 
 // Image resources
 import overViewImg from "../../public/images/caffy-overview.jpg";
@@ -21,11 +24,11 @@ import userFlowImg from "../../public/images/caffy-user-flow.png";
 import paperWireframesImg from "../../public/images/caffy-paper-wireframes.jpg";
 import digitalWireframesImg from "../../public/images/caffy-digital-wireframes.png";
 import lowFiPrototypeImg from "../../public/images/caffy-low-fi-prototype.png";
+import highFiPrototypeImg from "../../public/images/caffy-high-fi-prototype.png";
 import styleGuideImg from "../../public/images/caffy-style-guide.png";
 import styleGuideColumnImg from "../../public/images/caffy-style-guide-column.png";
 import muckupsImg1 from "../../public/images/caffy-muckups-1.png";
 import muckupsImg2 from "../../public/images/caffy-muckups-2.png";
-import Headline3 from "../../components/headline-3";
 
 const Caffy: NextPage = () => {
   return (
@@ -42,7 +45,7 @@ const Caffy: NextPage = () => {
       {/* ==================== */}
       {/* Project Hero */}
       {/* ==================== */}
-      {/* Project hero */}
+      {/* Project hero - normal */}
       <div className="mx-auto mt-[68px] max-w-[1040px] lg:mt-[88px] lg:p-0">
         <div className="lg:hidden">
           <div className="px-5 py-12">
@@ -59,6 +62,7 @@ const Caffy: NextPage = () => {
               alt="Caffy application screenshots"
               layout="responsive"
               objectFit="cover"
+              priority
             />
           </div>
         </div>
@@ -72,6 +76,7 @@ const Caffy: NextPage = () => {
               alt="Caffy application screenshots"
               layout="responsive"
               objectFit="cover"
+              priority
             />
             <div className="absolute top-0 left-0 h-full w-full bg-[#0F172A] opacity-40"></div>
             <div className="absolute top-[calc(50%-54px)] left-[13%]">
@@ -214,7 +219,7 @@ const Caffy: NextPage = () => {
             <div className="lg:text-center">
               <Headline3>Persona</Headline3>
             </div>
-            {/* Persona - large image */}
+            {/* Persona - image */}
             <div className="hidden overflow-hidden rounded-lg border border-slate-300 sm:block">
               <Image
                 src={personaLargeImg}
@@ -223,7 +228,7 @@ const Caffy: NextPage = () => {
                 objectFit="cover"
               />
             </div>
-            {/* Persona - vertical align images */}
+            {/* Persona - column images */}
             <div className="space-y-4 sm:hidden">
               <div className="relative overflow-hidden rounded-lg border border-slate-300">
                 <Image
@@ -495,6 +500,41 @@ const Caffy: NextPage = () => {
                       alt="muckups 2"
                       objectFit="cover"
                       layout="responsive"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="lg:flex lg:items-center lg:justify-between">
+              <div className="lg:max-w-[400px]">
+                <Headline3>Prototype</Headline3>
+                <p className="body-1 mb-4 text-slate-600">
+                  I created mockups in Figma and then converted them to a
+                  high-fidelity prototype.
+                </p>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <span>Open the prototype</span>
+                </a>
+              </div>
+              <div className="w-full lg:max-w-[560px]">
+                <div className="hidden md:block">
+                  <div className="relative overflow-hidden rounded-lg border border-slate-300">
+                    <iframe
+                      className="h-[480px] w-full"
+                      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fk0otxFcksIbzoWlitRyU88%2FMockups%3Fpage-id%3D310%253A582%26node-id%3D310%253A585%26viewport%3D262%252C48%252C0.14%26scaling%3Dscale-down%26starting-point-node-id%3D310%253A585"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                </div>
+                <div className="block md:hidden">
+                  <div className="overflow-hidden rounded-lg border border-slate-300">
+                    <Image
+                      src={highFiPrototypeImg}
+                      alt="High fidelity prototype image"
+                      layout="responsive"
+                      objectFit="cover"
                     />
                   </div>
                 </div>
