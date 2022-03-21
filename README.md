@@ -1,4 +1,4 @@
-## Portfolio Website
+# Portfolio Website
 
 This is the source code for [gaoshanghui.com](https://www.gaoshanghui.com/), a portfolio website for my recent projects.
 
