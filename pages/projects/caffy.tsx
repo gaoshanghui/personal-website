@@ -544,8 +544,8 @@ const Caffy: NextPage = () => {
                       <path
                         d="M20 15V15C20 16.8692 20 17.8038 19.5981 18.5C19.3348 18.9561 18.9561 19.3348 18.5 19.5981C17.8038 20 16.8692 20 15 20H10C7.17157 20 5.75736 20 4.87868 19.1213C4 18.2426 4 16.8284 4 14V9C4 7.13077 4 6.19615 4.40192 5.5C4.66523 5.04394 5.04394 4.66523 5.5 4.40192C6.19615 4 7.13077 4 9 4V4"
                         stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
                       />
                     </svg>
                   </span>
@@ -598,8 +598,8 @@ const Caffy: NextPage = () => {
                   design solutions. The primary difficulty I had while designing
                   this product was conducting user interviews. Through primary
                   user research, I can get some new information to help create a
-                  solution in the future, even if I don't have the right idea at
-                  the moment.
+                  solution in the future, even if I don&apos;t have the right
+                  idea at the moment.
                 </p>
               </div>
               <div className="lg:mx-auto lg:max-w-[760px]">
