@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+
+.body-1 {
+  @apply text-base font-normal leading-7 tracking-[0.01em];
+}
+
+.body-2 {
+  @apply text-sm font-normal leading-6 tracking-[0.01em];
+}
+
+@tailwind utilities;

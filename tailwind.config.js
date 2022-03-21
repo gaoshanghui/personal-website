@@ -1,27 +1,23 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
-      },
-      height: {
-        line: '2px',
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        "sans-cn": ["Noto Sans SC", ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
-        'project-cover-to-t':
-          'linear-gradient(14.83deg, rgba(15, 23, 42, 0.51) 2.1%, rgba(15, 23, 42, 0) 67.27%);',
-        'project-cover-to-r':
-          'linear-gradient(90deg, rgba(15, 23, 42, 0.590984) -0.06%, rgba(15, 23, 42, 0) 58.99%);',
+        "project-overlay-small":
+          "linear-gradient(16.24deg, rgba(15, 23, 42, 0.88) 2.27%, rgba(15, 23, 42, 0) 97.59%);",
+        "project-overlay-large":
+          "linear-gradient(90deg, #0F172A -40.04%, rgba(15, 23, 42, 0.37) 44.21%, rgba(15, 23, 42, 0) 100%);",
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 };
