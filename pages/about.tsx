@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Footer from "../components/footer";
 import Header from "../components/header";
+import Section from "../components/section";
 import ContainedButton from "../components/contained-button";
 import Headline2 from "../components/headline-2";
 import EducationInfo from "../components/education-info";
@@ -10,7 +11,6 @@ import SocialLinks from "../components/social-links";
 import profileImgLarge from "../public/images/profile.jpg";
 import profileImg from "../public/images/profile-small.jpg";
 import SkillInfo from "../components/skill-info";
-import Headline4 from "../components/headline-4";
 
 const About: NextPage = () => {
   return (
@@ -25,8 +25,8 @@ const About: NextPage = () => {
         />
       </Head>
       <Header />
-      <div className="mx-auto mt-[68px] max-w-[1040px] p-5 lg:mt-[88px] lg:p-0">
-        <section className="mb-[120px] pt-16 lg:mb-44 lg:pt-28">
+      <div className="mx-auto mt-[68px] max-w-[1040px] lg:mt-[88px] lg:p-0">
+        <Section>
           <p className="mb-10 font-sans-cn text-2xl font-bold tracking-[0.12em] text-slate-900">
             👋 你好！
           </p>
@@ -62,6 +62,7 @@ const About: NextPage = () => {
                 alt="My profile image"
                 layout="responsive"
                 objectFit="cover"
+                priority
               />
             </div>
             <div className="relative hidden w-1/2 max-w-[360px] overflow-hidden rounded-lg drop-shadow lg:block">
@@ -70,61 +71,61 @@ const About: NextPage = () => {
                 alt="My profile image"
                 layout="responsive"
                 objectFit="cover"
+                priority
               />
             </div>
           </div>
-        </section>
-        <section className="lg:flex">
-          <div className="mb-32 lg:w-1/2">
-            <Headline2>Education</Headline2>
-            {/* <Headline2 text="Education" /> */}
-            <EducationInfo
-              school="Kyushu University"
-              degree="Master of Design"
-              period="Aprl 2014 - Feb 2017"
-            />
-            <EducationInfo
-              school="Hubei University of Technology"
-              degree="Bachelor of Electronic Information Engineering"
-              period="Sep 2007 - August 2011"
-            />
+        </Section>
+        <Section>
+          <div className="lg:flex">
+            <div className="lg:w-1/2">
+              <Headline2>Education</Headline2>
+              <EducationInfo
+                school="Kyushu University"
+                degree="Master of Design"
+                period="Aprl 2014 - Feb 2017"
+              />
+              <EducationInfo
+                school="Hubei University of Technology"
+                degree="Bachelor of Electronic Information Engineering"
+                period="Sep 2007 - August 2011"
+              />
+            </div>
+            <div className="lg:w-1/2">
+              <Headline2>Skills</Headline2>
+              <SkillInfo
+                title="Design"
+                skills={[
+                  "Figma",
+                  "XD",
+                  "Sketch",
+                  "InVision",
+                  "Illustrator",
+                  "Photoshop",
+                  "InDesign",
+                ]}
+              />
+              <SkillInfo
+                title="Development"
+                skills={[
+                  "HTML/CSS(SCSS)",
+                  "JavaScript",
+                  "TypeScript",
+                  "React",
+                  "NextJS",
+                  "Git",
+                  "WordPress",
+                ]}
+              />
+              <SkillInfo
+                title="Languages"
+                skills={["Chinese", "English", "Japanese"]}
+              />
+            </div>
           </div>
-          <div className="mb-32 lg:w-1/2">
-            <Headline2>Skills</Headline2>
-            {/* <Headline2 text="Skills" /> */}
-            <SkillInfo
-              title="Design"
-              skills={[
-                "Figma",
-                "XD",
-                "Sketch",
-                "InVision",
-                "Illustrator",
-                "Photoshop",
-                "InDesign",
-              ]}
-            />
-            <SkillInfo
-              title="Development"
-              skills={[
-                "HTML/CSS(SCSS)",
-                "JavaScript",
-                "TypeScript",
-                "React",
-                "NextJS",
-                "Git",
-                "WordPress",
-              ]}
-            />
-            <SkillInfo
-              title="Languages"
-              skills={["Chinese", "English", "Japanese"]}
-            />
-          </div>
-        </section>
-        <section className="mb-32">
+        </Section>
+        <Section>
           <Headline2>Contact</Headline2>
-          {/* <Headline2 text="Contact" /> */}
           <p className="body-1 mb-6 text-slate-600">
             Whether you have a question or just want to say hi,{" "}
             <br className="hidden lg:block" />I will try my best to get back to
@@ -134,7 +135,7 @@ const About: NextPage = () => {
             textLabel="Start a conversation"
             href="mailto:mail.gaoshanghui@gmail.com"
           />
-        </section>
+        </Section>
         <SocialLinks />
       </div>
       <Footer />

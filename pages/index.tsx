@@ -1,11 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 import Card from "../components/card";
 import Footer from "../components/footer";
 import Header from "../components/header";
-import projectCaffyCover from "../public/images/project-cover-caffy.jpg";
-import projectCaffyCoverSmall from "../public/images/project-cover-caffy-small.jpg";
-import projectCover2 from "../public/images/project-covers/project-cover-2.jpg";
+import CaffyCoverImg from "../public/images/caffy-cover.jpg";
+import CaffyCoverImgSmall from "../public/images/caffy-cover-small.jpg";
+import wipCoverImg from "../public/images/wip-cover.jpg";
+import wipCoverImgSmall from "../public/images/wip-cover-small.jpg";
 
 const Home: NextPage = () => {
   return (
@@ -15,30 +17,50 @@ const Home: NextPage = () => {
         <meta charSet="utf-8" />
         <meta
           name="description"
-          content="Hello, my name is Gao Shanghui. This is the portfolio to show my recent projects. I have always believed that design and technology is one thing, and that their creative collaboration is the way to create better solutions."
+          content="Hello, my name is Gao Shanghui. This is the portfolio to show my recent projects."
         />
       </Head>
       <Header />
-      <h1 className="absolute m-[-1px] h-[1px] w-[1px] overflow-hidden p-0 ">
+      <h1 className="absolute m-[-1px] h-[1px] w-[1px] overflow-hidden p-0">
         Projects
       </h1>
       <div className="mt-[68px] space-y-5 p-5 lg:mt-[88px]">
         <Card
           title="Caffy"
-          media={projectCaffyCover}
-          mediaSmall={projectCaffyCoverSmall}
-          description="Design a mobile web app for a cafe."
+          media={CaffyCoverImg}
+          mediaSmall={CaffyCoverImgSmall}
+          description="Design a mobile web app for a cafe"
           link="/projects/caffy"
           priority={true}
         />
-        <Card
-          title="Project name"
-          media={projectCover2}
-          mediaSmall={projectCover2}
-          description="The simple description about the project."
-          link="/"
-          priority={false}
-        />
+        {/* Work in process */}
+        <div>
+          <div className="relative h-[calc(66vh)] lg:max-h-[800px]">
+            <div className="relative block h-full lg:hidden">
+              <Image
+                src={wipCoverImgSmall}
+                alt="Work in process"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div className="relative hidden h-full lg:block">
+              <Image
+                src={wipCoverImg}
+                alt="Work in process"
+                layout="fill"
+                objectFit="cover"
+                priority
+              />
+            </div>
+            <div className="absolute top-0 left-0 h-full w-full bg-project-overlay-small lg:bg-project-overlay-large" />
+            <div className="absolute bottom-16 left-5 lg:bottom-[20%] lg:left-[10%]">
+              <h2 className="mb-1 text-[40px] font-black leading-[3rem] tracking-[0.01em] text-white drop-shadow lg:mb-2 lg:text-5xl">
+                Work in process...
+              </h2>
+            </div>
+          </div>
+        </div>
       </div>
       <Footer />
     </>

@@ -112,7 +112,9 @@ const Caffy: NextPage = () => {
           <div className="mt-16 space-y-10 lg:mt-20 lg:flex lg:items-start lg:space-y-0">
             <div className="mx-auto max-w-[260px]">
               <div className="text-center">
-                <Headline4>Project Name</Headline4>
+                <p className="pb-2 text-xl font-extrabold leading-8 tracking-[0.01em] text-slate-900">
+                  Project Name
+                </p>
               </div>
               <p className="body-1 text-center text-slate-600">
                 Caffy
@@ -122,7 +124,9 @@ const Caffy: NextPage = () => {
             </div>
             <div className="mx-auto max-w-[260px]">
               <div className="text-center">
-                <Headline4>Duration</Headline4>
+                <p className="pb-2 text-xl font-extrabold leading-8 tracking-[0.01em] text-slate-900">
+                  Duration
+                </p>
               </div>
               <p className="body-1 text-center text-slate-600">
                 2021.12 - 2022.02
@@ -132,13 +136,17 @@ const Caffy: NextPage = () => {
             </div>
             <div className="mx-auto max-w-[260px]">
               <div className="text-center">
-                <Headline4>Role</Headline4>
+                <p className="pb-2 text-xl font-extrabold leading-8 tracking-[0.01em] text-slate-900">
+                  Role
+                </p>
               </div>
               <p className="body-1 text-center text-slate-600">UX Designer</p>
             </div>
             <div className="mx-auto max-w-[260px]">
               <div className="text-center">
-                <Headline4>Responsibilities</Headline4>
+                <p className="pb-2 text-xl font-extrabold leading-8 tracking-[0.01em] text-slate-900">
+                  Responsibilities
+                </p>
               </div>
               <p className="body-1 text-center text-slate-600">
                 User Research, wireframing, prototyping, usability studies

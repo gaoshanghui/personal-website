@@ -41,10 +41,10 @@ const Card: React.FC<CardProps> = ({
         </div>
         <div className="absolute top-0 left-0 h-full w-full bg-project-overlay-small lg:bg-project-overlay-large" />
         <div className="absolute bottom-16 left-5 lg:bottom-[20%] lg:left-[10%]">
-          <h2 className="mb-1 text-[40px] font-black leading-[3rem] tracking-[0.01em] text-white drop-shadow lg:mb-2 lg:text-5xl">
-            <a>{title}</a>
+          <h2 className="mb-1 text-[40px] font-black leading-[3rem] text-white drop-shadow-sm lg:text-[56px] lg:leading-[68px]">
+            {title}
           </h2>
-          <p className="mb-4 max-w-[calc(100vw-72px)] text-base font-normal text-white drop-shadow lg:mb-6 lg:text-2xl">
+          <p className="mb-6 max-w-[calc(100vw-72px)] text-base font-normal text-white drop-shadow-sm lg:mb-6 lg:text-[20px]">
             {description}
           </p>
           <ContainedButton textLabel="View case study" href={link} />
