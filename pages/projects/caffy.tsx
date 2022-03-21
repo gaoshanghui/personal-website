@@ -551,7 +551,7 @@ const Caffy: NextPage = () => {
                   </span>
                 </a>
               </div>
-              <div className="w-full lg:max-w-[560px]">
+              <div className="w-full pt-10 lg:max-w-[560px] lg:pt-0">
                 <div className="hidden md:block">
                   <div className="relative overflow-hidden rounded-lg border border-slate-300">
                     <iframe
