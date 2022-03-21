@@ -20,7 +20,8 @@ const About: NextPage = () => {
         <meta charSet="utf-8" />
         <meta
           name="description"
-          content="Hello, my name is Gao Shanghui. Whether you have a question or just want to say hi, I will try my best to get back to you!"
+          content="Hello, my name is Gao Shanghui. I love the design and I'm excited about new
+          technologies. Whether you have a question or just want to say hi, I will try my best to get back to you!"
         />
       </Head>
       <Header />
@@ -32,7 +33,9 @@ const About: NextPage = () => {
           <div className="lg:flex lg:items-start lg:justify-between">
             <div className="w-full lg:max-w-[552px]">
               <div className="mb-6">
-                <Headline4>My name is Gao Shanghui.</Headline4>
+                <h1 className="pb-2 text-xl font-extrabold leading-8 tracking-[0.01em] text-slate-900">
+                  My name is Gao Shanghui.
+                </h1>
               </div>
               <div className="mb-6">
                 <p className="body-1 text-slate-600">
@@ -102,7 +105,7 @@ const About: NextPage = () => {
               ]}
             />
             <SkillInfo
-              title="Engineering"
+              title="Development"
               skills={[
                 "HTML/CSS(SCSS)",
                 "JavaScript",

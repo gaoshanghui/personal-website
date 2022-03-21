@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Home | Gao Shanghui</title>
+        <title>Projects | Gao Shanghui</title>
         <meta charSet="utf-8" />
         <meta
           name="description"
@@ -19,6 +19,9 @@ const Home: NextPage = () => {
         />
       </Head>
       <Header />
+      <h1 className="absolute m-[-1px] h-[1px] w-[1px] overflow-hidden p-0 ">
+        Projects
+      </h1>
       <div className="mt-[68px] space-y-5 p-5 lg:mt-[88px]">
         <Card
           title="Caffy"

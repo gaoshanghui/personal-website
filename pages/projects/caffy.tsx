@@ -36,7 +36,7 @@ const Caffy: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Case Study | Gao Shanghui</title>
+        <title>Caffy | Gao Shanghui</title>
         <meta charSet="utf-8" />
         <meta
           name="description"
@@ -86,9 +86,9 @@ const Caffy: NextPage = () => {
                 <div className="mb-2 text-white drop-shadow-md">
                   <Headline1>Caffy</Headline1>
                 </div>
-                <h2 className="text-xl leading-8 text-white drop-shadow-md">
+                <p className="text-xl leading-8 text-white drop-shadow-md">
                   Design a Mobile Web app for a cafe
-                </h2>
+                </p>
               </div>
             </div>
           </div>
