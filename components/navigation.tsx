@@ -40,12 +40,12 @@ const Navigation: React.FC<NavigationProps> = ({
         </div>
         <Link href="/">
           <a className="flex h-full flex-col justify-center">
-            <h1 className="text-lg font-black leading-7 text-slate-900 lg:mb-1 lg:text-center lg:text-xl">
+            <span className="block text-lg font-black leading-7 text-slate-900 lg:mb-1 lg:text-center lg:text-xl">
               Gao Shanghui
-            </h1>
-            <p className="text-xs font-normal leading-4 text-slate-600 lg:text-center">
+            </span>
+            <span className="block text-xs font-normal leading-4 text-slate-600 lg:text-center">
               UX, UI and Web
-            </p>
+            </span>
           </a>
         </Link>
         <div className="flex items-center justify-end gap-4">

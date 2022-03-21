@@ -10,6 +10,7 @@ import SocialLinks from "../components/social-links";
 import profileImgLarge from "../public/images/profile.jpg";
 import profileImg from "../public/images/profile-small.jpg";
 import SkillInfo from "../components/skill-info";
+import Headline4 from "../components/headline-4";
 
 const About: NextPage = () => {
   return (
@@ -31,9 +32,7 @@ const About: NextPage = () => {
           <div className="lg:flex lg:items-start lg:justify-between">
             <div className="w-full lg:max-w-[552px]">
               <div className="mb-6">
-                <h2 className="headline-4 text-slate-900">
-                  My name is Gao Shanghui.
-                </h2>
+                <Headline4>My name is Gao Shanghui.</Headline4>
               </div>
               <div className="mb-6">
                 <p className="body-1 text-slate-600">

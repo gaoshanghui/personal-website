@@ -26,13 +26,13 @@ const Menu: React.FC<MenuProps> = ({ menuIsOpen }) => {
             </a>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/">
             <a className="text-xl font-bold leading-7 tracking-[0.01em] text-slate-900">
               Resume
             </a>
           </Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

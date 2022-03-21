@@ -10,6 +10,7 @@ import Section from "../../components/section";
 // Typography
 import Headline2 from "../../components/headline-2";
 import Headline3 from "../../components/headline-3";
+import Headline4 from "../../components/headline-4";
 
 // Image resources
 import overViewImg from "../../public/images/caffy-overview.jpg";
@@ -29,6 +30,7 @@ import styleGuideImg from "../../public/images/caffy-style-guide.png";
 import styleGuideColumnImg from "../../public/images/caffy-style-guide-column.png";
 import muckupsImg1 from "../../public/images/caffy-muckups-1.png";
 import muckupsImg2 from "../../public/images/caffy-muckups-2.png";
+import Headline1 from "../../components/headline-1";
 
 const Caffy: NextPage = () => {
   return (
@@ -81,12 +83,12 @@ const Caffy: NextPage = () => {
             <div className="absolute top-0 left-0 h-full w-full bg-[#0F172A] opacity-40"></div>
             <div className="absolute top-[calc(50%-54px)] left-[13%]">
               <div>
-                <h2 className="headline-1 mb-2 text-white drop-shadow-md">
-                  Caffy
-                </h2>
-                <p className="text-xl leading-8 text-white drop-shadow-md">
+                <div className="mb-2 text-white drop-shadow-md">
+                  <Headline1>Caffy</Headline1>
+                </div>
+                <h2 className="text-xl leading-8 text-white drop-shadow-md">
                   Design a Mobile Web app for a cafe
-                </p>
+                </h2>
               </div>
             </div>
           </div>
@@ -109,7 +111,9 @@ const Caffy: NextPage = () => {
           </p>
           <div className="mt-16 space-y-10 lg:mt-20 lg:flex lg:items-start lg:space-y-0">
             <div className="mx-auto max-w-[260px]">
-              <h4 className="headline-4 mb-1 text-center">Project Name</h4>
+              <div className="text-center">
+                <Headline4>Project Name</Headline4>
+              </div>
               <p className="body-1 text-center text-slate-600">
                 Caffy
                 <br />
@@ -117,7 +121,9 @@ const Caffy: NextPage = () => {
               </p>
             </div>
             <div className="mx-auto max-w-[260px]">
-              <h4 className="headline-4 mb-1 text-center">Duration</h4>
+              <div className="text-center">
+                <Headline4>Duration</Headline4>
+              </div>
               <p className="body-1 text-center text-slate-600">
                 2021.12 - 2022.02
                 <br />
@@ -125,11 +131,15 @@ const Caffy: NextPage = () => {
               </p>
             </div>
             <div className="mx-auto max-w-[260px]">
-              <h4 className="headline-4 mb-1 text-center">Role</h4>
+              <div className="text-center">
+                <Headline4>Role</Headline4>
+              </div>
               <p className="body-1 text-center text-slate-600">UX Designer</p>
             </div>
             <div className="mx-auto max-w-[260px]">
-              <h4 className="headline-4 mb-1 text-center">Responsibilities</h4>
+              <div className="text-center">
+                <Headline4>Responsibilities</Headline4>
+              </div>
               <p className="body-1 text-center text-slate-600">
                 User Research, wireframing, prototyping, usability studies
               </p>
@@ -194,18 +204,18 @@ const Caffy: NextPage = () => {
             </div>
             <div className="space-y-4 lg:flex lg:justify-center lg:space-y-0 lg:space-x-4">
               <div className="max-w-md rounded-lg border border-slate-300 bg-[#fafaf9] p-4">
-                <h4 className="headline-4 mb-2 text-slate-900 lg:text-center">
-                  Environment
-                </h4>
+                <div className="lg:text-center">
+                  <Headline4>Environment</Headline4>
+                </div>
                 <p className="body-1 text-slate-600 lg:text-center">
                   The environment and ambience of the actual shop is far from
                   what one would expect.
                 </p>
               </div>
               <div className="max-w-md rounded-lg border border-slate-300 bg-[#fafaf9] p-4">
-                <h4 className="headline-4 mb-2 text-slate-900 lg:text-center">
-                  Convenience
-                </h4>
+                <div className="lg:text-center">
+                  <Headline4>Convenience</Headline4>
+                </div>
                 <p className="body-1 text-slate-600 lg:text-center">
                   Orders must be placed in line at the cashier. Takeaway
                   customers cannot order in advance.
@@ -397,9 +407,8 @@ const Caffy: NextPage = () => {
               <div className="lg:max-w-[560px]">
                 <div className="space-y-4">
                   <div className="rounded-lg border-[1px] border-slate-300 bg-[#fafaf9] py-4 px-6">
-                    <h4 className="headline-4 mb-2 text-slate-900">
-                      Round 1 findings
-                    </h4>
+                    <Headline4>Round 1 findings</Headline4>
+
                     <ul className="list-disc pl-4">
                       <li>
                         <p className="body-1 text-slate-600">
@@ -415,9 +424,7 @@ const Caffy: NextPage = () => {
                     </ul>
                   </div>
                   <div className="rounded-lg border border-slate-300 bg-[#fafaf9] py-4 px-6">
-                    <h4 className="headline-4 mb-2 text-slate-900">
-                      Round 2 findings
-                    </h4>
+                    <Headline4>Round 2 findings</Headline4>
                     <ul className="list-disc pl-4">
                       <li>
                         <p className="body-1 text-slate-600">
@@ -442,7 +449,7 @@ const Caffy: NextPage = () => {
       {/* ================================ */}
       {/* Refining the design */}
       {/* ================================ */}
-      <Anchor id="refining-the-design" />
+      <Anchor id="Refining-the-design" />
       <Section>
         <div className="space-y-20 lg:space-y-28">
           <div className="lg:text-center">
@@ -514,8 +521,34 @@ const Caffy: NextPage = () => {
                   I created mockups in Figma and then converted them to a
                   high-fidelity prototype.
                 </p>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <span>Open the prototype</span>
+                <a
+                  href="https://www.figma.com/proto/k0otxFcksIbzoWlitRyU88/Mockups?page-id=310%3A582&node-id=310%3A585&viewport=262%2C48%2C0.25&scaling=scale-down&starting-point-node-id=310%3A585"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 transition-all hover:text-blue-700 hover:underline"
+                >
+                  <span>
+                    Open the prototype
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="ml-1 inline-block"
+                    >
+                      <path
+                        d="M21 3V2H22V3H21ZM11.7071 13.7071C11.3166 14.0976 10.6834 14.0976 10.2929 13.7071C9.90237 13.3166 9.90237 12.6834 10.2929 12.2929L11.7071 13.7071ZM20 11V3H22V11H20ZM21 4H13V2H21V4ZM21.7071 3.70711L11.7071 13.7071L10.2929 12.2929L20.2929 2.29289L21.7071 3.70711Z"
+                        fill="currentColor"
+                      />
+                      <path
+                        d="M20 15V15C20 16.8692 20 17.8038 19.5981 18.5C19.3348 18.9561 18.9561 19.3348 18.5 19.5981C17.8038 20 16.8692 20 15 20H10C7.17157 20 5.75736 20 4.87868 19.1213C4 18.2426 4 16.8284 4 14V9C4 7.13077 4 6.19615 4.40192 5.5C4.66523 5.04394 5.04394 4.66523 5.5 4.40192C6.19615 4 7.13077 4 9 4V4"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </span>
                 </a>
               </div>
               <div className="w-full lg:max-w-[560px]">
@@ -544,6 +577,71 @@ const Caffy: NextPage = () => {
         </div>
       </Section>
 
+      {/* ================================ */}
+      {/* Section: Going forward */}
+      {/* ================================ */}
+      <Anchor id="Going-forward" />
+      <Section>
+        <div className="space-y-20 lg:space-y-28">
+          <div className="lg:text-center">
+            <Headline2>Going forward</Headline2>
+          </div>
+          <div>
+            <div className="lg:text-center">
+              <Headline3>What I learned</Headline3>
+            </div>
+            <div className="space-y-4">
+              <div className="lg:mx-auto lg:max-w-[760px]">
+                <Headline4>Understanding your users</Headline4>
+                <p className="body-1 mb-4 text-slate-600">
+                  The more you understand the user, the better you can find
+                  design solutions. The primary difficulty I had while designing
+                  this product was conducting user interviews. Through primary
+                  user research, I can get some new information to help create a
+                  solution in the future, even if I don't have the right idea at
+                  the moment.
+                </p>
+              </div>
+              <div className="lg:mx-auto lg:max-w-[760px]">
+                <Headline4>
+                  The first ideas are only the beginning of the process
+                </Headline4>
+                <p className="body-1 mb-4 text-slate-600">
+                  While designing the Caffy app, I learned that the first ideas
+                  for the app are only the beginning of the process. Usability
+                  studies and feedbacks influenced each iteration of the
+                  app&apos;s designs. Usability studies helped me understand how
+                  real users interact with my designs and how well the product
+                  meets their needs.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="lg:text-center">
+              <Headline3>Next steps</Headline3>
+            </div>
+            <div className="space-y-4">
+              <div className="lg:mx-auto lg:max-w-[760px]">
+                <Headline4>Further iterations and usability tests</Headline4>
+                <p className="body-1 mb-4 text-slate-600">
+                  Conduct another round of usability studies to validate whether
+                  the pain points users experienced have been effectively
+                  addressed.
+                </p>
+              </div>
+              <div className="lg:mx-auto lg:max-w-[760px]">
+                <Headline4>More research</Headline4>
+                <p className="body-1 mb-4 text-slate-600">
+                  Take more factors (e.g., different age groups, occupations)
+                  and stakeholders into account. And develop further user
+                  personas and empathy maps.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
       <Footer />
     </div>
   );
