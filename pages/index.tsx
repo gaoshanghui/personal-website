@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <meta charSet="utf-8" />
         <meta
           name="description"
-          content="Hello, my name is Gao Shanghui. This is the portfolio to show my recent projects."
+          content="Hello, my name is Gao Shanghui. I am a user experience designer. This is the portfolio to show my recent projects."
         />
       </Head>
       <Header />
