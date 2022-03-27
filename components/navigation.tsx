@@ -44,7 +44,7 @@ const Navigation: React.FC<NavigationProps> = ({
               Gao Shanghui
             </span>
             <span className="block text-xs font-normal leading-4 text-slate-600 lg:text-center">
-              UX, UI and Web
+              User Experience Designer
             </span>
           </a>
         </Link>
