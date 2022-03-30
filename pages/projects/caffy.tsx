@@ -104,10 +104,21 @@ const Caffy: NextPage = () => {
             <Headline2>Project Overview</Headline2>
           </div>
           <p className="body-1 mx-auto max-w-[760px] text-center text-slate-600">
-            Caffy is a Mobile Web Application designed for cafes. In the current
-            small-scale cafe business, online ordering either doesn&apos;t exist
-            or is very outdated. Caffy serves information about the shop while
-            providing an online ordering feature to improve the user experience.
+            Caffy is a Mobile Web Application designed for cafes. Among the
+            current small and medium-sized cafes, many shops do not have their
+            websites, and some provide shop information through social networks.
+            In addition, the ability to allow users to view a cafe&apos;s menu
+            online and order item from their mobile devices is not yet widely
+            available. Caffy&apos;s goal is to serve information about the shop
+            while providing an online ordering feature to improve the user
+            experience.
+          </p>
+          <br />
+          <p className="body-1 mx-auto max-w-[760px] text-center text-slate-600">
+            Caffy, as a PWA (Progressive Web App), allows first-time users to
+            easily access it on their mobile devices without having to download
+            and install it. Also for heavy users, they can add it to their
+            desktop for on-the-go access.
           </p>
           <div className="mt-16 space-y-10 lg:mt-20 lg:flex lg:items-start lg:space-y-0">
             <div className="mx-auto max-w-[260px]">
