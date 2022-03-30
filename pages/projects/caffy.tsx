@@ -21,6 +21,7 @@ import personaCommentImg from "../../public/images/caffy-persona-quotes.png";
 import personaGoalsImg from "../../public/images/caffy-persona-goals.png";
 import personaFrustrationsImg from "../../public/images/caffy-persona-frustrations.png";
 import personaBioImg from "../../public/images/caffy-persona-bio.png";
+import userJourneyMapImg from "../../public/images/caffy-user-journey-map.png";
 import userFlowImg from "../../public/images/caffy-user-flow.png";
 import paperWireframesImg from "../../public/images/caffy-paper-wireframes.jpg";
 import digitalWireframesImg from "../../public/images/caffy-digital-wireframes.png";
@@ -298,6 +299,29 @@ const Caffy: NextPage = () => {
                   layout="responsive"
                   objectFit="cover"
                 />
+              </div>
+            </div>
+          </div>
+
+          {/* User Journey Map */}
+          <div>
+            <div className="lg:text-center">
+              <Headline3>User Journey Map</Headline3>
+              <div>
+                <div className="overflow-hidden rounded-lg border border-slate-300">
+                  <Image
+                    src={userJourneyMapImg}
+                    alt="User Journey Map"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+                <div className="mt-4 px-5">
+                  <p className="body-2 text-center text-slate-600">
+                    Goal: A easy way to get the shop information and make an
+                    order
+                  </p>
+                </div>
               </div>
             </div>
           </div>
