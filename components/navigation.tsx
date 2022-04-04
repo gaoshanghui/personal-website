@@ -54,7 +54,7 @@ const Navigation: React.FC<NavigationProps> = ({
           </a>
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/shanghui-gao-b503b1227"
+            href="https://www.linkedin.com/in/gao-shanghui-b503b1227/"
             rel="noopener noreferrer"
           >
             <LinkedinButton />
