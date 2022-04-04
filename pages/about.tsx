@@ -83,12 +83,12 @@ const About: NextPage = () => {
               <EducationInfo
                 school="Kyushu University"
                 degree="Master of Design"
-                period="Aprl 2014 - Feb 2017"
+                period="April 2014 - March 2017"
               />
               <EducationInfo
                 school="Hubei University of Technology"
                 degree="Bachelor of Electronic Information Engineering"
-                period="Sep 2007 - August 2011"
+                period="September 2007 - August 2011"
               />
             </div>
             <div className="lg:w-1/2">
