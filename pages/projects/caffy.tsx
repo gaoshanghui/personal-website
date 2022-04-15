@@ -677,8 +677,11 @@ const Caffy: NextPage = () => {
                 <Headline4>More research</Headline4>
                 <p className="body-1 mb-4 text-slate-600">
                   Take more factors (e.g., different age groups, occupations)
-                  and stakeholders into account. And develop further user
-                  personas and empathy maps.
+                  and stakeholders into account. And develop additional types of
+                  user personas, such as shop staff. To make Caffy not only
+                  consider the part of the consumer but also can meet the needs
+                  of the business part. For example, is the ordering process
+                  streamlined to improve the quality of service.
                 </p>
               </div>
             </div>
