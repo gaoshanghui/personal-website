@@ -118,8 +118,8 @@ const Caffy: NextPage = () => {
           <p className="body-1 mx-auto max-w-[760px] text-center text-slate-600">
             Caffy, as a PWA (Progressive Web App), allows first-time users to
             easily access it on their mobile devices without having to download
-            and install it. Also for heavy users, they can add it to their
-            desktop for on-the-go access.
+            and install it. Also for heavy users, they can add it to their home
+            screen for on-the-go access.
           </p>
           <div className="mt-16 space-y-10 lg:mt-20 lg:flex lg:items-start lg:space-y-0">
             <div className="mx-auto max-w-[260px]">
