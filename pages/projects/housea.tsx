@@ -25,6 +25,7 @@ import mockupsImg1 from "../../public/images/housea-mockups-1.jpg";
 import mockupsImg2 from "../../public/images/housea-mockups-2.jpg";
 import mockupsImg3 from "../../public/images/housea-mockups-3.jpg";
 import mockupsImg4 from "../../public/images/housea-mockups-4.jpg";
+import mockupsImg5 from "../../public/images/housea-mockups-5.jpg";
 
 const Housea: NextPage = () => {
   return (
@@ -414,7 +415,7 @@ const Housea: NextPage = () => {
       {/* --- Refining the design ---  */}
       <Anchor id="Refining-the-design" />
       <section className="py-12 lg:py-24">
-        <div className="mx-auto max-w-[1200px] px-5">
+        <div className="mx-auto max-w-[1200px]">
           <div className="space-y-20 lg:space-y-28">
             <div>
               <div className="lg:text-center">
@@ -493,6 +494,18 @@ const Housea: NextPage = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#FAFAF9] py-12 lg:py-24">
+        <div className="mx-auto max-w-[1200px]">
+          <div className="relative w-full overflow-hidden border border-slate-300 shadow">
+            <Image
+              src={mockupsImg5}
+              alt="mockup - inbox"
+              layout="responsive"
+              objectFit="cover"
+            />
           </div>
         </div>
       </section>
