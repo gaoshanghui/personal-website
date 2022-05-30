@@ -22,11 +22,59 @@ import mockupsTypographyImage from "../../public/images/housea-mockups-typograph
 import mockupsColorsImage from "../../public/images/housea-mockups-colors.png";
 import prototypeImage from "../../public/images/housea-figma-prototype.jpg";
 
+// Mockups - large screens
 import mockupsImg1 from "../../public/images/housea-mockups-1.jpg";
 import mockupsImg2 from "../../public/images/housea-mockups-2.jpg";
 import mockupsImg3 from "../../public/images/housea-mockups-3.jpg";
 import mockupsImg4 from "../../public/images/housea-mockups-4.jpg";
 import mockupsImg5 from "../../public/images/housea-mockups-5.jpg";
+import mockupsImg6 from "../../public/images/housea-mockups-6.jpg";
+import mockupsImg7 from "../../public/images/housea-mockups-7.jpg";
+import mockupsImg8 from "../../public/images/housea-mockups-8.jpg";
+import mockupsImg9 from "../../public/images/housea-mockups-9.jpg";
+import mockupsImg10 from "../../public/images/housea-mockups-10.jpg";
+import mockupsImg11 from "../../public/images/housea-mockups-11.jpg";
+
+// Mockups - small screens
+import mockupsImgS1 from "../../public/images/housea-mockups-s-1.jpg";
+import mockupsImgS2 from "../../public/images/housea-mockups-s-2.jpg";
+import mockupsImgS3 from "../../public/images/housea-mockups-s-3.jpg";
+import mockupsImgS4 from "../../public/images/housea-mockups-s-4.jpg";
+import mockupsImgS5 from "../../public/images/housea-mockups-s-5.jpg";
+import mockupsImgS6 from "../../public/images/housea-mockups-s-6.jpg";
+import mockupsImgS7 from "../../public/images/housea-mockups-s-7.jpg";
+import mockupsImgS8 from "../../public/images/housea-mockups-s-8.jpg";
+import mockupsImgS9 from "../../public/images/housea-mockups-s-9.jpg";
+import mockupsImgS10 from "../../public/images/housea-mockups-s-10.jpg";
+import mockupsImgS11 from "../../public/images/housea-mockups-s-11.jpg";
+import mockupsImgS12 from "../../public/images/housea-mockups-s-12.jpg";
+import mockupsImgS13 from "../../public/images/housea-mockups-s-13.jpg";
+import mockupsImgS14 from "../../public/images/housea-mockups-s-14.jpg";
+import mockupsImgS15 from "../../public/images/housea-mockups-s-15.jpg";
+import mockupsImgS16 from "../../public/images/housea-mockups-s-16.jpg";
+import mockupsImgS17 from "../../public/images/housea-mockups-s-17.jpg";
+import mockupsImgS18 from "../../public/images/housea-mockups-s-18.jpg";
+
+const mockupsSmallImgs = [
+  mockupsImgS1,
+  mockupsImgS2,
+  mockupsImgS3,
+  mockupsImgS4,
+  mockupsImgS5,
+  mockupsImgS6,
+  mockupsImgS7,
+  mockupsImgS8,
+  mockupsImgS9,
+  mockupsImgS10,
+  mockupsImgS11,
+  mockupsImgS12,
+  mockupsImgS13,
+  mockupsImgS14,
+  mockupsImgS15,
+  mockupsImgS16,
+  mockupsImgS17,
+  mockupsImgS18,
+];
 
 const Housea: NextPage = () => {
   return (
@@ -69,13 +117,13 @@ const Housea: NextPage = () => {
             <Headline2>Project Overview</Headline2>
           </div>
           <p className="body-1 mx-auto max-w-[760px] text-center text-slate-600">
-            Housea is a website for finding rental apartments. Housea's goal is
-            to provide a friendly and easy-to-use rental service for foreigners
-            living in Japan. Housea serves as a platform for searching
-            apartments and provides users with a wealth of rental information
-            through cooperation with housing agents. Housea supports multiple
-            languages. The language of the user interface is assumed to be
-            setting as Chinese for this Case Study.
+            Housea is a website for finding rental apartments. Housea&apos;s
+            goal is to provide a friendly and easy-to-use rental service for
+            foreigners living in Japan. Housea serves as a platform for
+            searching apartments and provides users with a wealth of rental
+            information through cooperation with housing agents. Housea supports
+            multiple languages. The language of the user interface is assumed to
+            be setting as Chinese for this Case Study.
           </p>
           <br />
           <p className="body-1 mx-auto max-w-[760px] text-center text-slate-600">
@@ -393,8 +441,8 @@ const Housea: NextPage = () => {
                     <Headline4>Round 1 Improvement</Headline4>
                   </div>
                   <p className="body-1 text-slate-600 lg:text-center">
-                    Add a button in Mobile's Bottom bar so that users can easily
-                    view the price details of the apartment at any time
+                    Add a button in Mobile&apos;s Bottom bar so that users can
+                    easily view the price details of the apartment at any time
                     (Dialog).
                   </p>
                 </div>
@@ -510,6 +558,93 @@ const Housea: NextPage = () => {
           </div>
         </div>
       </section>
+      <section className="py-12 lg:py-24">
+        <div className="mx-auto max-w-[1200px]">
+          <div className="lg:flex lg:gap-x-6">
+            <div className="w-full">
+              <div className="flex flex-col gap-y-6">
+                <div className="relative w-full overflow-hidden border border-slate-300 shadow">
+                  <Image
+                    src={mockupsImg6}
+                    alt="Mockup - Blogs"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+                <div className="relative w-full overflow-hidden border border-slate-300 shadow">
+                  <Image
+                    src={mockupsImg7}
+                    alt="Mockup - Blog"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="w-full">
+              <div className="flex flex-col gap-y-6">
+                <div className="relative w-full overflow-hidden border border-slate-300 shadow">
+                  <Image
+                    src={mockupsImg8}
+                    alt="Mockup - Room List"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+                <div className="relative w-full overflow-hidden border border-slate-300 shadow">
+                  <Image
+                    src={mockupsImg9}
+                    alt="Mockup - Browsing history"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+                <div className="relative w-full overflow-hidden border border-slate-300 shadow">
+                  <Image
+                    src={mockupsImg10}
+                    alt="Mockup - Wish List"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#FAFAF9] py-12 lg:py-24">
+        <div className="mx-auto max-w-[1200px]">
+          <div className="relative w-full overflow-hidden border border-slate-300 shadow">
+            <Image
+              src={mockupsImg11}
+              alt="Mockup - Meeting"
+              layout="responsive"
+              objectFit="cover"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="py-12 px-5 lg:py-24 lg:px-0">
+        <div className="mx-auto max-w-[1200px]">
+          <div className="flex w-full flex-wrap justify-center gap-6">
+            {mockupsSmallImgs.map((img, index) => {
+              return (
+                <div
+                  key={index}
+                  className="relative w-full overflow-hidden rounded-2xl border border-slate-300 shadow lg:w-[32%]"
+                >
+                  <Image
+                    src={img}
+                    alt="mockup small screens"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
       <section className="bg-[#FAFAF9] py-12 lg:py-24">
         <div className="mx-auto max-w-[1040px] px-5 lg:px-0">
           <div className="lg:flex lg:items-center lg:justify-between">
@@ -519,35 +654,66 @@ const Housea: NextPage = () => {
                 I created mockups in Figma and then converted them to a
                 high-fidelity prototype.
               </p>
-              <a
-                href="https://www.figma.com/proto/k0otxFcksIbzoWlitRyU88/Mockups?page-id=310%3A582&node-id=310%3A585&viewport=262%2C48%2C0.25&scaling=scale-down&starting-point-node-id=310%3A585"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 transition-all hover:text-blue-700 hover:underline"
-              >
-                <span>
-                  Open the prototype
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="ml-1 inline-block"
-                  >
-                    <path
-                      d="M21 3V2H22V3H21ZM11.7071 13.7071C11.3166 14.0976 10.6834 14.0976 10.2929 13.7071C9.90237 13.3166 9.90237 12.6834 10.2929 12.2929L11.7071 13.7071ZM20 11V3H22V11H20ZM21 4H13V2H21V4ZM21.7071 3.70711L11.7071 13.7071L10.2929 12.2929L20.2929 2.29289L21.7071 3.70711Z"
-                      fill="currentColor"
-                    />
-                    <path
-                      d="M20 15V15C20 16.8692 20 17.8038 19.5981 18.5C19.3348 18.9561 18.9561 19.3348 18.5 19.5981C17.8038 20 16.8692 20 15 20H10C7.17157 20 5.75736 20 4.87868 19.1213C4 18.2426 4 16.8284 4 14V9C4 7.13077 4 6.19615 4.40192 5.5C4.66523 5.04394 5.04394 4.66523 5.5 4.40192C6.19615 4 7.13077 4 9 4V4"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </span>
-              </a>
+              <div className="flex flex-col gap-2">
+                <a
+                  href="https://www.figma.com/proto/ZBMYMysfiBZoU12hq3SwN7/Mockups?node-id=17%3A73&scaling=scale-down&page-id=17%3A2&starting-point-node-id=17%3A73"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 transition-all hover:text-blue-700 hover:underline"
+                >
+                  <span>
+                    Large (desktop)
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="ml-1 inline-block"
+                    >
+                      <path
+                        d="M21 3V2H22V3H21ZM11.7071 13.7071C11.3166 14.0976 10.6834 14.0976 10.2929 13.7071C9.90237 13.3166 9.90237 12.6834 10.2929 12.2929L11.7071 13.7071ZM20 11V3H22V11H20ZM21 4H13V2H21V4ZM21.7071 3.70711L11.7071 13.7071L10.2929 12.2929L20.2929 2.29289L21.7071 3.70711Z"
+                        fill="currentColor"
+                      />
+                      <path
+                        d="M20 15V15C20 16.8692 20 17.8038 19.5981 18.5C19.3348 18.9561 18.9561 19.3348 18.5 19.5981C17.8038 20 16.8692 20 15 20H10C7.17157 20 5.75736 20 4.87868 19.1213C4 18.2426 4 16.8284 4 14V9C4 7.13077 4 6.19615 4.40192 5.5C4.66523 5.04394 5.04394 4.66523 5.5 4.40192C6.19615 4 7.13077 4 9 4V4"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <a
+                  href="https://www.figma.com/proto/ZBMYMysfiBZoU12hq3SwN7/Mockups?node-id=313%3A1696&scaling=scale-down&page-id=313%3A1485&starting-point-node-id=313%3A1696"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mb-2 text-blue-600 transition-all hover:text-blue-700 hover:underline"
+                >
+                  <span>
+                    Small (mobile)
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="ml-1 inline-block"
+                    >
+                      <path
+                        d="M21 3V2H22V3H21ZM11.7071 13.7071C11.3166 14.0976 10.6834 14.0976 10.2929 13.7071C9.90237 13.3166 9.90237 12.6834 10.2929 12.2929L11.7071 13.7071ZM20 11V3H22V11H20ZM21 4H13V2H21V4ZM21.7071 3.70711L11.7071 13.7071L10.2929 12.2929L20.2929 2.29289L21.7071 3.70711Z"
+                        fill="currentColor"
+                      />
+                      <path
+                        d="M20 15V15C20 16.8692 20 17.8038 19.5981 18.5C19.3348 18.9561 18.9561 19.3348 18.5 19.5981C17.8038 20 16.8692 20 15 20H10C7.17157 20 5.75736 20 4.87868 19.1213C4 18.2426 4 16.8284 4 14V9C4 7.13077 4 6.19615 4.40192 5.5C4.66523 5.04394 5.04394 4.66523 5.5 4.40192C6.19615 4 7.13077 4 9 4V4"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </div>
             </div>
             <div className="w-full pt-10 lg:max-w-[560px] lg:pt-0">
               <div className="overflow-hidden rounded-lg border border-slate-300">
