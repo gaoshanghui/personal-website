@@ -116,13 +116,13 @@ const Housea: NextPage = () => {
             <Headline2>Project Overview</Headline2>
           </div>
           <p className="body-1 mx-auto max-w-[760px] text-center text-slate-600">
-            Housea is a website for finding rental apartments. Housea's goal is
-            to provide a friendly and easy-to-use rental service for foreigners
-            living in Japan. Housea serves as a platform for searching
-            apartments and provides users with a wealth of rental information
-            through cooperation with housing agents. Housea supports multiple
-            languages. The language of the user interface is assumed to be
-            setting as Chinese for this Case Study.
+            Housea is a website for finding rental apartments. Housea&apos;s
+            goal is to provide a friendly and easy-to-use rental service for
+            foreigners living in Japan. Housea serves as a platform for
+            searching apartments and provides users with a wealth of rental
+            information through cooperation with housing agents. Housea supports
+            multiple languages. The language of the user interface is assumed to
+            be setting as Chinese for this Case Study.
           </p>
           <br />
           <p className="body-1 mx-auto max-w-[760px] text-center text-slate-600">
@@ -440,8 +440,8 @@ const Housea: NextPage = () => {
                     <Headline4>Round 1 Improvement</Headline4>
                   </div>
                   <p className="body-1 text-slate-600 lg:text-center">
-                    Add a button in Mobile's Bottom bar so that users can easily
-                    view the price details of the apartment at any time
+                    Add a button in Mobile&apos;s Bottom bar so that users can
+                    easily view the price details of the apartment at any time
                     (Dialog).
                   </p>
                 </div>
