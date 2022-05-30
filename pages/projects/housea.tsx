@@ -20,6 +20,7 @@ import wireframeImage from "../../public/images/housea-wireframes.png";
 import lowfiPrototypeImage from "../../public/images/housea-lowfi-prototype.png";
 import mockupsTypographyImage from "../../public/images/housea-mockups-typography.png";
 import mockupsColorsImage from "../../public/images/housea-mockups-colors.png";
+import prototypeImage from "../../public/images/housea-figma-prototype.jpg";
 
 import mockupsImg1 from "../../public/images/housea-mockups-1.jpg";
 import mockupsImg2 from "../../public/images/housea-mockups-2.jpg";
@@ -549,14 +550,14 @@ const Housea: NextPage = () => {
               </a>
             </div>
             <div className="w-full pt-10 lg:max-w-[560px] lg:pt-0">
-                <div className="overflow-hidden rounded-lg border border-slate-300">
-                  <Image
-                    src={highFiPrototypeImg}
-                    alt="High fidelity prototype image"
-                    layout="responsive"
-                    objectFit="cover"
-                  />
-                </div>
+              <div className="overflow-hidden rounded-lg border border-slate-300">
+                <Image
+                  src={prototypeImage}
+                  alt="High fidelity prototype image"
+                  layout="responsive"
+                  objectFit="cover"
+                />
+              </div>
             </div>
           </div>
         </div>
