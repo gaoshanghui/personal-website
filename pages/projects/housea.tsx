@@ -15,6 +15,16 @@ import emap2 from "../../public/images/housea-emap-2.png";
 import persona1 from "../../public/images/housea-persona-1.png";
 import persona2 from "../../public/images/housea-persona-2.png";
 import userJourneyMap from "../../public/images/housea-ujmap.png";
+import sitemapImage from "../../public/images/housea-sitemap.png";
+import wireframeImage from "../../public/images/housea-wireframes.png";
+import lowfiPrototypeImage from "../../public/images/housea-lowfi-prototype.png";
+import mockupsTypographyImage from "../../public/images/housea-mockups-typography.png";
+import mockupsColorsImage from "../../public/images/housea-mockups-colors.png";
+
+import mockupsImg1 from "../../public/images/housea-mockups-1.jpg";
+import mockupsImg2 from "../../public/images/housea-mockups-2.jpg";
+import mockupsImg3 from "../../public/images/housea-mockups-3.jpg";
+import mockupsImg4 from "../../public/images/housea-mockups-4.jpg";
 
 const Housea: NextPage = () => {
   return (
@@ -142,6 +152,7 @@ const Housea: NextPage = () => {
         ]}
       />
 
+      {/* --- Understanding the user ---  */}
       <Anchor id="Understanding-the-user" />
       <section className="py-12 lg:py-24">
         <div className="mx-auto max-w-[1040px] px-5">
@@ -283,6 +294,204 @@ const Housea: NextPage = () => {
                 layout="responsive"
                 objectFit="cover"
               />
+            </div>
+            <div className="mt-4 px-5">
+              <p className="body-2 text-center text-slate-600">
+                Goal: A easy way to decide which apartment to stay in and book
+                an agent.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- Starting the design ---  */}
+      <Anchor id="Starting-the-design" />
+      <section className="py-12 lg:py-24">
+        <div className="mx-auto max-w-[1040px] px-5">
+          <div className="space-y-20 lg:space-y-28">
+            <div>
+              <div className="lg:text-center">
+                <Headline2>Starting the design</Headline2>
+              </div>
+              <div className="lg:mx-auto lg:max-w-[760px] lg:text-center">
+                <p className="body-1 text-slate-600">
+                  Before getting into the mockups and high-fidelity prototypes,
+                  I wanted to get an idea of what the core parts of the
+                  application would look like by creating sitemaps and
+                  wireframes.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div className="lg:text-center">
+                <Headline3>Sitemap</Headline3>
+              </div>
+              <div>
+                <div className="overflow-hidden">
+                  <Image
+                    src={sitemapImage}
+                    alt="User flow"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className="lg:text-center">
+                <Headline3>Wireframes</Headline3>
+              </div>
+              <div className="space-y-4">
+                <div className="overflow-hidden">
+                  <Image
+                    src={wireframeImage}
+                    alt="User flow"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+                <div>
+                  <div className="overflow-hidden">
+                    <Image
+                      src={lowfiPrototypeImage}
+                      alt="User flow"
+                      layout="responsive"
+                      objectFit="cover"
+                    />
+                  </div>
+                  <div className="mt-4 px-5">
+                    <p className="body-2 mx-auto max-w-2xl text-center text-slate-600">
+                      Using the completed set of digital wireframes, I also
+                      created a low-fidelity prototype. So the prototype could
+                      be used in a usability study to test the core part of the
+                      product.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Usability study */}
+            <div>
+              <div className="lg:text-center">
+                <Headline3>Usability study</Headline3>
+                <div className="lg:mx-auto lg:max-w-[760px] lg:text-center">
+                  <p className="body-1 mb-8 text-slate-600">
+                    I conducted two rounds of usability studies. Findings from
+                    the first study helped guide the designs from wireframes to
+                    mockups. The second study used a high-fidelity prototype and
+                    revealed what aspects of the mockups needed refining.
+                  </p>
+                </div>
+              </div>
+              <div className="space-y-4 lg:flex lg:justify-center lg:space-y-0 lg:space-x-4">
+                <div className="max-w-md rounded-lg border border-slate-300 bg-[#fafaf9] p-4">
+                  <div className="lg:text-center">
+                    <Headline4>Round 1 Improvement</Headline4>
+                  </div>
+                  <p className="body-1 text-slate-600 lg:text-center">
+                    Add a button in Mobile's Bottom bar so that users can easily
+                    view the price details of the apartment at any time
+                    (Dialog).
+                  </p>
+                </div>
+                <div className="max-w-md rounded-lg border border-slate-300 bg-[#fafaf9] p-4">
+                  <div className="lg:text-center">
+                    <Headline4>Round 2 Improvement</Headline4>
+                  </div>
+                  <p className="body-1 text-slate-600 lg:text-center">
+                    Add the search bar to the Top bar to make it easy for users
+                    to start searching from any page.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- Refining the design ---  */}
+      <Anchor id="Refining-the-design" />
+      <section className="py-12 lg:py-24">
+        <div className="mx-auto max-w-[1200px] px-5">
+          <div className="space-y-20 lg:space-y-28">
+            <div>
+              <div className="lg:text-center">
+                <Headline2>Refining the design</Headline2>
+              </div>
+            </div>
+            {/* Refining the design - Fundations */}
+            <div>
+              <div className="lg:text-center">
+                <Headline3>Fundations</Headline3>
+              </div>
+              <div className="space-y-20">
+                <div className="relative w-full overflow-hidden">
+                  <Image
+                    src={mockupsTypographyImage}
+                    alt="Styles - typography"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+                <div className="relative w-full overflow-hidden">
+                  <Image
+                    src={mockupsColorsImage}
+                    alt="Styles - colors, elevations and elements image"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+              </div>
+            </div>
+            {/* Refining the design - Mockups */}
+            <div>
+              <div className="lg:text-center">
+                <Headline3>Muckups</Headline3>
+              </div>
+              <div className="space-y-6">
+                <div className="relative w-full overflow-hidden border border-slate-300 shadow">
+                  <Image
+                    src={mockupsImg1}
+                    alt="Mockups - Home"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+                <div className="lg:flex lg:gap-x-6">
+                  <div className="w-full">
+                    <div className="relative w-full overflow-hidden border border-slate-300 shadow">
+                      <Image
+                        src={mockupsImg2}
+                        alt="Styles - colors, elevations and elements image"
+                        layout="responsive"
+                        objectFit="contain"
+                      />
+                    </div>
+                  </div>
+                  <div className="w-full">
+                    <div className="flex flex-col gap-y-6">
+                      <div className="relative w-full overflow-hidden border border-slate-300 shadow">
+                        <Image
+                          src={mockupsImg3}
+                          alt="Styles - colors, elevations and elements image"
+                          layout="responsive"
+                          objectFit="cover"
+                        />
+                      </div>
+                      <div className="relative w-full overflow-hidden border border-slate-300 shadow">
+                        <Image
+                          src={mockupsImg4}
+                          alt="Styles - colors, elevations and elements image"
+                          layout="responsive"
+                          objectFit="cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
