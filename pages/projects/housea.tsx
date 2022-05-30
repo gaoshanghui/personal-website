@@ -21,11 +21,59 @@ import lowfiPrototypeImage from "../../public/images/housea-lowfi-prototype.png"
 import mockupsTypographyImage from "../../public/images/housea-mockups-typography.png";
 import mockupsColorsImage from "../../public/images/housea-mockups-colors.png";
 
+// Mockups - large screens
 import mockupsImg1 from "../../public/images/housea-mockups-1.jpg";
 import mockupsImg2 from "../../public/images/housea-mockups-2.jpg";
 import mockupsImg3 from "../../public/images/housea-mockups-3.jpg";
 import mockupsImg4 from "../../public/images/housea-mockups-4.jpg";
 import mockupsImg5 from "../../public/images/housea-mockups-5.jpg";
+import mockupsImg6 from "../../public/images/housea-mockups-6.jpg";
+import mockupsImg7 from "../../public/images/housea-mockups-7.jpg";
+import mockupsImg8 from "../../public/images/housea-mockups-8.jpg";
+import mockupsImg9 from "../../public/images/housea-mockups-9.jpg";
+import mockupsImg10 from "../../public/images/housea-mockups-10.jpg";
+import mockupsImg11 from "../../public/images/housea-mockups-11.jpg";
+
+// Mockups - small screens
+import mockupsImgS1 from "../../public/images/housea-mockups-s-1.jpg";
+import mockupsImgS2 from "../../public/images/housea-mockups-s-2.jpg";
+import mockupsImgS3 from "../../public/images/housea-mockups-s-3.jpg";
+import mockupsImgS4 from "../../public/images/housea-mockups-s-4.jpg";
+import mockupsImgS5 from "../../public/images/housea-mockups-s-5.jpg";
+import mockupsImgS6 from "../../public/images/housea-mockups-s-6.jpg";
+import mockupsImgS7 from "../../public/images/housea-mockups-s-7.jpg";
+import mockupsImgS8 from "../../public/images/housea-mockups-s-8.jpg";
+import mockupsImgS9 from "../../public/images/housea-mockups-s-9.jpg";
+import mockupsImgS10 from "../../public/images/housea-mockups-s-10.jpg";
+import mockupsImgS11 from "../../public/images/housea-mockups-s-11.jpg";
+import mockupsImgS12 from "../../public/images/housea-mockups-s-12.jpg";
+import mockupsImgS13 from "../../public/images/housea-mockups-s-13.jpg";
+import mockupsImgS14 from "../../public/images/housea-mockups-s-14.jpg";
+import mockupsImgS15 from "../../public/images/housea-mockups-s-15.jpg";
+import mockupsImgS16 from "../../public/images/housea-mockups-s-16.jpg";
+import mockupsImgS17 from "../../public/images/housea-mockups-s-17.jpg";
+import mockupsImgS18 from "../../public/images/housea-mockups-s-18.jpg";
+
+const mockupsSmallImgs = [
+  mockupsImgS1,
+  mockupsImgS2,
+  mockupsImgS3,
+  mockupsImgS4,
+  mockupsImgS5,
+  mockupsImgS6,
+  mockupsImgS7,
+  mockupsImgS8,
+  mockupsImgS9,
+  mockupsImgS10,
+  mockupsImgS11,
+  mockupsImgS12,
+  mockupsImgS13,
+  mockupsImgS14,
+  mockupsImgS15,
+  mockupsImgS16,
+  mockupsImgS17,
+  mockupsImgS18,
+];
 
 const Housea: NextPage = () => {
   return (
@@ -506,6 +554,93 @@ const Housea: NextPage = () => {
               layout="responsive"
               objectFit="cover"
             />
+          </div>
+        </div>
+      </section>
+      <section className="py-12 lg:py-24">
+        <div className="mx-auto max-w-[1200px]">
+          <div className="lg:flex lg:gap-x-6">
+            <div className="w-full">
+              <div className="flex flex-col gap-y-6">
+                <div className="relative w-full overflow-hidden border border-slate-300 shadow">
+                  <Image
+                    src={mockupsImg6}
+                    alt="Mockup - Blogs"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+                <div className="relative w-full overflow-hidden border border-slate-300 shadow">
+                  <Image
+                    src={mockupsImg7}
+                    alt="Mockup - Blog"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="w-full">
+              <div className="flex flex-col gap-y-6">
+                <div className="relative w-full overflow-hidden border border-slate-300 shadow">
+                  <Image
+                    src={mockupsImg8}
+                    alt="Mockup - Room List"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+                <div className="relative w-full overflow-hidden border border-slate-300 shadow">
+                  <Image
+                    src={mockupsImg9}
+                    alt="Mockup - Browsing history"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+                <div className="relative w-full overflow-hidden border border-slate-300 shadow">
+                  <Image
+                    src={mockupsImg10}
+                    alt="Mockup - Wish List"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#FAFAF9] py-12 lg:py-24">
+        <div className="mx-auto max-w-[1200px]">
+          <div className="relative w-full overflow-hidden border border-slate-300 shadow">
+            <Image
+              src={mockupsImg11}
+              alt="Mockup - Meeting"
+              layout="responsive"
+              objectFit="cover"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="py-12 px-5 lg:py-24 lg:px-0">
+        <div className="mx-auto max-w-[1200px]">
+          <div className="flex w-full flex-wrap justify-center gap-6">
+            {mockupsSmallImgs.map((img, index) => {
+              return (
+                <div
+                  key={index}
+                  className="relative w-full overflow-hidden rounded-2xl border border-slate-300 shadow lg:w-[32%]"
+                >
+                  <Image
+                    src={img}
+                    alt="mockup small screens"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
