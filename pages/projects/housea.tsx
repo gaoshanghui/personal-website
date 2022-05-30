@@ -509,6 +509,58 @@ const Housea: NextPage = () => {
           </div>
         </div>
       </section>
+      <section className="bg-[#FAFAF9] py-12 lg:py-24">
+        <div className="mx-auto max-w-[1040px] px-5 lg:px-0">
+          <div className="lg:flex lg:items-center lg:justify-between">
+            <div className="lg:max-w-[400px]">
+              <Headline3>Prototype</Headline3>
+              <p className="body-1 mb-4 text-slate-600">
+                I created mockups in Figma and then converted them to a
+                high-fidelity prototype.
+              </p>
+              <a
+                href="https://www.figma.com/proto/k0otxFcksIbzoWlitRyU88/Mockups?page-id=310%3A582&node-id=310%3A585&viewport=262%2C48%2C0.25&scaling=scale-down&starting-point-node-id=310%3A585"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 transition-all hover:text-blue-700 hover:underline"
+              >
+                <span>
+                  Open the prototype
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="ml-1 inline-block"
+                  >
+                    <path
+                      d="M21 3V2H22V3H21ZM11.7071 13.7071C11.3166 14.0976 10.6834 14.0976 10.2929 13.7071C9.90237 13.3166 9.90237 12.6834 10.2929 12.2929L11.7071 13.7071ZM20 11V3H22V11H20ZM21 4H13V2H21V4ZM21.7071 3.70711L11.7071 13.7071L10.2929 12.2929L20.2929 2.29289L21.7071 3.70711Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M20 15V15C20 16.8692 20 17.8038 19.5981 18.5C19.3348 18.9561 18.9561 19.3348 18.5 19.5981C17.8038 20 16.8692 20 15 20H10C7.17157 20 5.75736 20 4.87868 19.1213C4 18.2426 4 16.8284 4 14V9C4 7.13077 4 6.19615 4.40192 5.5C4.66523 5.04394 5.04394 4.66523 5.5 4.40192C6.19615 4 7.13077 4 9 4V4"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+            <div className="w-full pt-10 lg:max-w-[560px] lg:pt-0">
+                <div className="overflow-hidden rounded-lg border border-slate-300">
+                  <Image
+                    src={highFiPrototypeImg}
+                    alt="High fidelity prototype image"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
