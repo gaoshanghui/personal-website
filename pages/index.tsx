@@ -8,6 +8,7 @@ import CaffyCoverImg from "../public/images/caffy-cover.jpg";
 import CaffyCoverImgSmall from "../public/images/caffy-cover-small.jpg";
 import wipCoverImg from "../public/images/wip-cover.jpg";
 import wipCoverImgSmall from "../public/images/wip-cover-small.jpg";
+import houseaCoverImg from "../public/images/housea-cover.jpg";
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +26,15 @@ const Home: NextPage = () => {
         Projects
       </h1>
       <div className="mt-[68px] space-y-5 p-5 lg:mt-[88px]">
+        <Card
+          title="Housea"
+          media={houseaCoverImg}
+          mediaSmall={CaffyCoverImgSmall}
+          description="Design a website for finding rental apartments"
+          link="/projects/housea"
+          priority={true}
+          darkText={true}
+        />
         <Card
           title="Caffy"
           media={CaffyCoverImg}
