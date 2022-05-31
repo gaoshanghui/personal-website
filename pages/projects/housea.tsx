@@ -773,7 +773,7 @@ const Housea: NextPage = () => {
                   their tone of voice and expressions. When I encountered
                   something I did not understand, I would try to get the
                   interviewer to explain it clearly. By recording the interview
-                  (with the interviewee's permission), I can review and organize
+                  (with the interviewee&aposs permission), I can review and organize
                   it again afterwards. This way, I can get more information from
                   the user interviews.
                 </p>
