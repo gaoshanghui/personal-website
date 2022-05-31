@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Header from "../../components/header";
+import Footer from "../../components/footer";
 import InPageNavigation from "../../components/in-page-navigation";
 import Headline2 from "../../components/headline-2";
 import Headline3 from "../../components/headline-3";
@@ -728,6 +729,81 @@ const Housea: NextPage = () => {
           </div>
         </div>
       </section>
+
+      {/* --- Going forward ---  */}
+      <Anchor id="Going-forward" />
+      <section className="py-12 lg:py-24">
+        <div className="space-y-20 lg:space-y-28">
+          <div className="lg:text-center">
+            <Headline2>Going forward</Headline2>
+          </div>
+          <div>
+            <div className="lg:text-center">
+              <Headline3>What I learned</Headline3>
+            </div>
+            <div className="space-y-4">
+              <div className="lg:mx-auto lg:max-w-[760px]">
+                <Headline4>Focusing on the interview itself</Headline4>
+                <p className="body-1 mb-4 text-slate-600">
+                  In this user interview, I avoided multitasking as much as
+                  possible, such as taking many notes during the interview.
+                  Instead, I focused on the interviewees, paying attention to
+                  their tone of voice and expressions. When I encountered
+                  something I did not understand, I would try to get the
+                  interviewer to explain it clearly. By recording the interview
+                  (with the interviewee's permission), I can review and organize
+                  it again afterwards. This way, I can get more information from
+                  the user interviews.
+                </p>
+              </div>
+              <div className="lg:mx-auto lg:max-w-[760px]">
+                <Headline4>Start with the core part of the product</Headline4>
+                <p className="body-1 mb-4 text-slate-600">
+                  In this design, I first completed the part from searching for
+                  apartments and booking agents, the most core part for Housea.
+                  And use the prototype for testing and making improvements.
+                  Then add features like sending messages and blogs. When
+                  designing a larger service or product, starting with the core
+                  part of the product helps me to grasp the overall structure of
+                  the service during the design process.
+                </p>
+              </div>
+              <div className="lg:mx-auto lg:max-w-[760px]">
+                <Headline4>
+                  Structuring components to handle states, themes, and
+                  variations
+                </Headline4>
+                <p className="body-1 mb-4 text-slate-600">
+                  I created Mockups and Prototypes using Figma. When creating
+                  components, I learned to use the automatic layout and variant
+                  features, which improved the overall design uniformity and
+                  made it easier to manage and reuse components. In addition,
+                  using the interactive component feature improved my efficiency
+                  when building prototypes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="lg:text-center">
+              <Headline3>Next steps</Headline3>
+            </div>
+            <div className="space-y-4">
+              <div className="lg:mx-auto lg:max-w-[760px]">
+                <Headline4>Taking more stakeholders into account</Headline4>
+                <p className="body-1 mb-4 text-slate-600">
+                  Include more stakeholders in the scope of the user research,
+                  such as agency staff, and develop additional types of user
+                  personas. Making Housea not only solves the problem of finding
+                  apartments for users, but also takes into account the
+                  difficulties faced by agencies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
     </div>
   );
 };
