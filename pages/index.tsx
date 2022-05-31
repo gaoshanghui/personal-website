@@ -1,13 +1,15 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
+// import Image from "next/image";
 import Card from "../components/card";
 import Footer from "../components/footer";
 import Header from "../components/header";
-import CaffyCoverImg from "../public/images/caffy-cover.jpg";
-import CaffyCoverImgSmall from "../public/images/caffy-cover-small.jpg";
-import wipCoverImg from "../public/images/wip-cover.jpg";
-import wipCoverImgSmall from "../public/images/wip-cover-small.jpg";
+import caffyCoverImg from "../public/images/caffy-cover.jpg";
+import caffyCoverImgSmall from "../public/images/caffy-cover-small.jpg";
+// import wipCoverImg from "../public/images/wip-cover.jpg";
+// import wipCoverImgSmall from "../public/images/wip-cover-small.jpg";
+import houseaCoverImg from "../public/images/housea-cover.jpg";
+import houseaCoverImgSmall from "../public/images/housea-cover-small.jpg";
 
 const Home: NextPage = () => {
   return (
@@ -26,15 +28,24 @@ const Home: NextPage = () => {
       </h1>
       <div className="mt-[68px] space-y-5 p-5 lg:mt-[88px]">
         <Card
+          title="Housea"
+          media={houseaCoverImg}
+          mediaSmall={houseaCoverImgSmall}
+          description="Design a website for finding rental apartments"
+          link="/projects/housea"
+          priority={true}
+          darkText={true}
+        />
+        <Card
           title="Caffy"
-          media={CaffyCoverImg}
-          mediaSmall={CaffyCoverImgSmall}
+          media={caffyCoverImg}
+          mediaSmall={caffyCoverImgSmall}
           description="Design a mobile web app for a cafe"
           link="/projects/caffy"
           priority={true}
         />
         {/* Work in process */}
-        <div>
+        {/* <div>
           <div className="relative h-[calc(66vh)] lg:max-h-[800px]">
             <div className="relative block h-full lg:hidden">
               <Image
@@ -60,7 +71,7 @@ const Home: NextPage = () => {
               </h2>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </>
