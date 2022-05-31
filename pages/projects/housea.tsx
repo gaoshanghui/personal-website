@@ -333,7 +333,7 @@ const Housea: NextPage = () => {
             <div className="lg:text-center">
               <Headline4>Personas</Headline4>
             </div>
-            <div className="lg:flex lg:gap-x-6">
+            <div className="flex flex-col lg:flex-row gap-6">
               <div className="relative w-full overflow-hidden">
                 <Image
                   src={persona1}
@@ -532,7 +532,7 @@ const Housea: NextPage = () => {
                     objectFit="cover"
                   />
                 </div>
-                <div className="flex flex-col gap-x-6 lg:flex-row">
+                <div className="flex flex-col gap-6 lg:flex-row">
                   <div className="w-full">
                     <div className="relative w-full overflow-hidden border border-slate-300 shadow">
                       <Image
@@ -583,7 +583,7 @@ const Housea: NextPage = () => {
       </section>
       <section className="py-12 px-5 lg:py-24 lg:px-0">
         <div className="mx-auto max-w-[1200px]">
-          <div className="lg:flex lg:gap-x-6">
+          <div className="flex flex-col gap-6 lg:flex-row">
             <div className="w-full">
               <div className="flex flex-col gap-y-6">
                 <div className="relative w-full overflow-hidden border border-slate-300 shadow">
@@ -754,7 +754,7 @@ const Housea: NextPage = () => {
 
       {/* --- Going forward ---  */}
       <Anchor id="Going-forward" />
-      <section className="py-12 lg:py-24">
+      <section className="py-12 px-5 lg:py-24 lg:px-0">
         <div className="space-y-20 lg:space-y-28">
           <div className="lg:text-center">
             <Headline2>Going forward</Headline2>
