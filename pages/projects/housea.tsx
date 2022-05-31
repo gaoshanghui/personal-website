@@ -11,6 +11,7 @@ import Anchor from "../../components/anchor";
 
 // Images used in this page
 import overviewImage from "../../public/images/housea-overview.png";
+import overviewSmallImage from "../../public/images/housea-overview-s.jpg";
 import emap1 from "../../public/images/housea-emap-1.png";
 import emap2 from "../../public/images/housea-emap-2.png";
 import persona1 from "../../public/images/housea-persona-1.png";
@@ -89,6 +90,27 @@ const Housea: NextPage = () => {
         />
       </Head>
       <Header />
+      <div className="mx-auto mt-[68px] max-w-[1040px] lg:mt-[88px] lg:p-0">
+        <div className="lg:hidden">
+          <div className="px-5 py-12">
+            <h2 className="mb-2 text-[40px] font-black leading-[48px] tracking-[0.01em] text-slate-900">
+              Housea
+            </h2>
+            <p className="body-1 text-slate-600">
+              Design a website for finding rental apartments
+            </p>
+          </div>
+          <div>
+            <Image
+              src={overviewSmallImage}
+              alt="Caffy application screenshots"
+              layout="responsive"
+              objectFit="cover"
+              priority
+            />
+          </div>
+        </div>
+      </div>
       {/* --- Hero image --- */}
       <div className="mt-[68px] hidden lg:mt-[88px] lg:block lg:p-0">
         <div className="relative bg-[url('/images/housea-overview-bg.png')]">
@@ -287,7 +309,7 @@ const Housea: NextPage = () => {
             <div className="lg:text-center">
               <Headline4>Empathy maps</Headline4>
             </div>
-            <div className="lg:flex lg:gap-x-6">
+            <div className="flex flex-col gap-6 lg:flex-row">
               <div className="relative w-full overflow-hidden">
                 <Image
                   src={emap1}
@@ -464,7 +486,7 @@ const Housea: NextPage = () => {
 
       {/* --- Refining the design ---  */}
       <Anchor id="Refining-the-design" />
-      <section className="py-12 lg:py-24">
+      <section className="py-12 px-5 lg:py-24 lg:px-0">
         <div className="mx-auto max-w-[1200px]">
           <div className="space-y-20 lg:space-y-28">
             <div>
@@ -510,23 +532,23 @@ const Housea: NextPage = () => {
                     objectFit="cover"
                   />
                 </div>
-                <div className="lg:flex lg:gap-x-6">
+                <div className="flex flex-col gap-x-6 lg:flex-row">
                   <div className="w-full">
                     <div className="relative w-full overflow-hidden border border-slate-300 shadow">
                       <Image
                         src={mockupsImg2}
-                        alt="Styles - colors, elevations and elements image"
+                        alt="Mockups - Room"
                         layout="responsive"
                         objectFit="contain"
                       />
                     </div>
                   </div>
                   <div className="w-full">
-                    <div className="flex flex-col gap-y-6">
+                    <div className="flex flex-col gap-6">
                       <div className="relative w-full overflow-hidden border border-slate-300 shadow">
                         <Image
                           src={mockupsImg3}
-                          alt="Styles - colors, elevations and elements image"
+                          alt="Mockups - Room confirmation"
                           layout="responsive"
                           objectFit="cover"
                         />
@@ -534,7 +556,7 @@ const Housea: NextPage = () => {
                       <div className="relative w-full overflow-hidden border border-slate-300 shadow">
                         <Image
                           src={mockupsImg4}
-                          alt="Styles - colors, elevations and elements image"
+                          alt="Mockups - Complete"
                           layout="responsive"
                           objectFit="cover"
                         />
@@ -547,7 +569,7 @@ const Housea: NextPage = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[#FAFAF9] py-12 lg:py-24">
+      <section className="bg-[#FAFAF9] py-12 px-5 lg:py-24 lg:px-0">
         <div className="mx-auto max-w-[1200px]">
           <div className="relative w-full overflow-hidden border border-slate-300 shadow">
             <Image
@@ -559,7 +581,7 @@ const Housea: NextPage = () => {
           </div>
         </div>
       </section>
-      <section className="py-12 lg:py-24">
+      <section className="py-12 px-5 lg:py-24 lg:px-0">
         <div className="mx-auto max-w-[1200px]">
           <div className="lg:flex lg:gap-x-6">
             <div className="w-full">
@@ -613,7 +635,7 @@ const Housea: NextPage = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[#FAFAF9] py-12 lg:py-24">
+      <section className="bg-[#FAFAF9] py-12 px-5 lg:py-24 lg:px-0">
         <div className="mx-auto max-w-[1200px]">
           <div className="relative w-full overflow-hidden border border-slate-300 shadow">
             <Image
