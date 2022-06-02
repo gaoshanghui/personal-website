@@ -151,10 +151,11 @@ const Housea: NextPage = () => {
           <br />
           <p className="body-1 mx-auto max-w-[760px] text-center text-slate-600">
             For users who are unfamiliar with the unique process and rules of
-            renting a room in Japan, Housea provides them with a guide to the
+            renting an apartment in Japan, Housea provides guides about the
             basics of renting an apartment and some tips. In addition, Housea
-            supports the function of sending messages and videos. So housing
-            agents can provide consultation services for users online.
+            supports the function of sending messages and online video meetings.
+            So housing agents can provide online consultation services for
+            users.
           </p>
           <div className="mt-16 space-y-10 lg:mt-20 lg:flex lg:items-start lg:space-y-0">
             <div className="mx-auto max-w-[260px]">
@@ -254,7 +255,7 @@ const Housea: NextPage = () => {
                 <br />
                 <p className="body-1 text-slate-600 lg:mx-auto lg:max-w-[760px] lg:text-center">
                   In addition, some users mentioned in the interview that they
-                  were cannot see the apartments on-site because they were in a
+                  could not see the apartments on-site because they were in a
                   different location. They were worried about the actual
                   condition of the apartments before moving in because of the
                   little information provided.
@@ -298,10 +299,9 @@ const Housea: NextPage = () => {
               <Headline3>User Persona</Headline3>
             </div>
             <p className="body-1 text-slate-600 lg:mx-auto lg:max-w-[760px] lg:text-center">
-              Based on the content of the user interviews, I created two empathy
-              maps. Using the empathy maps, I made two user personas.
-              <br />
-              (one is a student, one is a working adult).
+              Based on the insights of the user interviews, I created two
+              empathy maps. Using the empathy maps, I made two user personas.
+              One is a student, and one is a working adult.
             </p>
           </div>
           {/* User Persona - Empathy maps */}
@@ -333,7 +333,7 @@ const Housea: NextPage = () => {
             <div className="lg:text-center">
               <Headline4>Personas</Headline4>
             </div>
-            <div className="flex flex-col lg:flex-row gap-6">
+            <div className="flex flex-col gap-6 lg:flex-row">
               <div className="relative w-full overflow-hidden">
                 <Image
                   src={persona1}
@@ -463,20 +463,35 @@ const Housea: NextPage = () => {
                   <div className="lg:text-center">
                     <Headline4>Round 1 Improvement</Headline4>
                   </div>
-                  <p className="body-1 text-slate-600 lg:text-center">
-                    Add a button in Mobile&apos;s Bottom bar so that users can
-                    easily view the price details of the apartment at any time
-                    (Dialog).
-                  </p>
+                  <ul className="list-disc pl-4">
+                    <li>
+                      <p className="body-1 text-slate-600">
+                        Add a button in Mobile&apos;s Bottom bar so that users
+                        can easily view the price details of the apartment at
+                        any time (Dialog).
+                      </p>
+                    </li>
+                  </ul>
                 </div>
                 <div className="max-w-md rounded-lg border border-slate-300 bg-[#fafaf9] p-4">
                   <div className="lg:text-center">
                     <Headline4>Round 2 Improvement</Headline4>
                   </div>
-                  <p className="body-1 text-slate-600 lg:text-center">
-                    Add the search bar to the Top bar to make it easy for users
-                    to start searching from any page.
-                  </p>
+                  <ul className="list-disc pl-4">
+                    <li>
+                      <p className="body-1 text-slate-600">
+                        Add the search feature to the Top bar to make it easy
+                        for users to start searching from any page.
+                      </p>
+                    </li>
+                    <li>
+                      <p className="body-1 text-slate-600">
+                        When the user clicks on the &quotlike button&quot, the
+                        icon style changes from an outline to a fill, making the
+                        feedback clearer and easier to understand.
+                      </p>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -773,21 +788,20 @@ const Housea: NextPage = () => {
                   their tone of voice and expressions. When I encountered
                   something I did not understand, I would try to get the
                   interviewer to explain it clearly. By recording the interview
-                  (with the interviewee&aposs permission), I can review and organize
-                  it again afterwards. This way, I can get more information from
-                  the user interviews.
+                  (with the interviewee&aposs permission), I can review and
+                  organize it again afterwards. This way, I can get more
+                  information from the user interviews.
                 </p>
               </div>
               <div className="lg:mx-auto lg:max-w-[760px]">
                 <Headline4>Start with the core part of the product</Headline4>
                 <p className="body-1 mb-4 text-slate-600">
                   In this design, I first completed the part from searching for
-                  apartments and booking agents, the most core part for Housea.
+                  apartments to booking agents, the most core part for Housea.
                   And use the prototype for testing and making improvements.
-                  Then add features like sending messages and blogs. When
-                  designing a larger service or product, starting with the core
-                  part of the product helps me to grasp the overall structure of
-                  the service during the design process.
+                  Then add features like sending messages and blogs. Starting
+                  with the core part of the product helps me to grasp the
+                  overall structure of the service during the design process.
                 </p>
               </div>
               <div className="lg:mx-auto lg:max-w-[760px]">
@@ -796,12 +810,12 @@ const Housea: NextPage = () => {
                   variations
                 </Headline4>
                 <p className="body-1 mb-4 text-slate-600">
-                  I created Mockups and Prototypes using Figma. When creating
-                  components, I learned to use the automatic layout and variant
-                  features, which improved the overall design uniformity and
-                  made it easier to manage and reuse components. In addition,
-                  using the interactive component feature improved my efficiency
-                  when building prototypes.
+                  I created Mockups and Prototypes using Figma. While creating
+                  components, I learned to use the auto layout and variant
+                  features. They improved the overall design uniformity and made
+                  components management easier. In addition, using the
+                  interactive component feature improved my efficiency when
+                  building prototypes.
                 </p>
               </div>
             </div>
