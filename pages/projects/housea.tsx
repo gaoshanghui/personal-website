@@ -797,12 +797,11 @@ const Housea: NextPage = () => {
                 <Headline4>Start with the core part of the product</Headline4>
                 <p className="body-1 mb-4 text-slate-600">
                   In this design, I first completed the part from searching for
-                  apartments and booking agents, the most core part for Housea.
+                  apartments to booking agents, the most core part for Housea.
                   And use the prototype for testing and making improvements.
-                  Then add features like sending messages and blogs. When
-                  designing a larger service or product, starting with the core
-                  part of the product helps me to grasp the overall structure of
-                  the service during the design process.
+                  Then add features like sending messages and blogs. Starting
+                  with the core part of the product helps me to grasp the
+                  overall structure of the service during the design process.
                 </p>
               </div>
               <div className="lg:mx-auto lg:max-w-[760px]">
@@ -811,12 +810,12 @@ const Housea: NextPage = () => {
                   variations
                 </Headline4>
                 <p className="body-1 mb-4 text-slate-600">
-                  I created Mockups and Prototypes using Figma. When creating
-                  components, I learned to use the automatic layout and variant
-                  features, which improved the overall design uniformity and
-                  made it easier to manage and reuse components. In addition,
-                  using the interactive component feature improved my efficiency
-                  when building prototypes.
+                  I created Mockups and Prototypes using Figma. While creating
+                  components, I learned to use the auto layout and variant
+                  features. They improved the overall design uniformity and made
+                  components management easier. In addition, using the
+                  interactive component feature improved my efficiency when
+                  building prototypes.
                 </p>
               </div>
             </div>
