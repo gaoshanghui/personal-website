@@ -486,8 +486,8 @@ const Housea: NextPage = () => {
                     </li>
                     <li>
                       <p className="body-1 text-slate-600">
-                        When the user clicks on the "like button", the icon
-                        style changes from an outline to a fill, making the
+                        When the user clicks on the &quotlike button&quot, the
+                        icon style changes from an outline to a fill, making the
                         feedback clearer and easier to understand.
                       </p>
                     </li>
