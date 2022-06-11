@@ -52,7 +52,7 @@ const About: NextPage = () => {
                   JavaScript-based web development. I love the design and am
                   excited about new technologies. I have always believed that
                   design and development are inseparable, and their creative
-                  collaboration creates better solutions.
+                  collaboration leads to better solutions.
                 </p>
               </div>
             </div>
