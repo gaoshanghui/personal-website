@@ -47,12 +47,12 @@ const About: NextPage = () => {
                   present them in an engaging and easy-to-understand way.
                   <br />
                   <br />
-                  For the past few years, I have been studying user experience
-                  design, user interface design, and modern JavaScript-based web
-                  development. I love the design and I&apos;m excited about new
-                  technologies. I have always believed that design and
-                  development is one thing, and that their creative
-                  collaboration is the way to create better solutions.
+                  For the past few years, I have been learning and researching
+                  user experience design, user interface design, and modern
+                  JavaScript-based web development. I love the design and am
+                  excited about new technologies. I have always believed that
+                  design and development are inseparable, and their creative
+                  collaboration creates better solutions.
                 </p>
               </div>
             </div>
