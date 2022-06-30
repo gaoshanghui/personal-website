@@ -71,10 +71,10 @@ const Circle: NextPage = () => {
             When international students are ready to go back to their home
             countries or to work elsewhere, they need to handle a lot of
             household goods. They need a tool to help transfer these items to
-            the students who need them. Circle's primary target users include
-            students who are new to a school or moving and need to purchase home
-            furnishings. Students who are graduating and want to transfer their
-            unused furniture and home furnishings.
+            the students who need them. Circle&apos;s primary target users
+            include students who are new to a school or moving and need to
+            purchase home furnishings. Students who are graduating and want to
+            transfer their unused furniture and home furnishings.
           </p>
           <div className="mt-16 space-y-10 lg:mt-20 lg:flex lg:items-start lg:space-y-0">
             <div className="mx-auto max-w-[260px]">
