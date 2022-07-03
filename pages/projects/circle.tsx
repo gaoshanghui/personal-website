@@ -492,7 +492,7 @@ const Circle: NextPage = () => {
               </p>
               <div className="flex flex-col gap-2">
                 <a
-                  href="https://www.figma.com/proto/ZBMYMysfiBZoU12hq3SwN7/Mockups?node-id=17%3A73&scaling=scale-down&page-id=17%3A2&starting-point-node-id=17%3A73"
+                  href="https://www.figma.com/proto/akTUvUPPBJpwTu0zKLfpvr/Mockup---Mobile-App?page-id=492%3A2074&node-id=492%3A2080&viewport=499%2C-52%2C0.34&scaling=min-zoom&starting-point-node-id=492%3A2080&show-proto-sidebar=1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 transition-all hover:text-blue-700 hover:underline"
