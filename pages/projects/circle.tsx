@@ -402,8 +402,8 @@ const Circle: NextPage = () => {
                   <Headline4>Profile Info</Headline4>
                 </div>
                 <p className="body-1 text-slate-600 lg:text-center">
-                  People want to access the seller's profile before they send a
-                  request
+                  People want to access the seller&apos;s profile before they
+                  send a request
                 </p>
               </div>
               <div className="w-full rounded-lg border border-slate-300 bg-[#fafaf9] p-4">
