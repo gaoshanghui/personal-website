@@ -10,6 +10,8 @@ import caffyCoverImgSmall from "../public/images/caffy-cover-small.jpg";
 // import wipCoverImgSmall from "../public/images/wip-cover-small.jpg";
 import houseaCoverImg from "../public/images/housea-cover.jpg";
 import houseaCoverImgSmall from "../public/images/housea-cover-small.jpg";
+import circleCoverImg from "../public/images/circle-cover.png";
+import circleCoverImgSmall from "../public/images/circle-cover-small.png";
 
 const Home: NextPage = () => {
   return (
@@ -37,12 +39,21 @@ const Home: NextPage = () => {
           darkText={true}
         />
         <Card
+          title="Circle"
+          media={circleCoverImg}
+          mediaSmall={circleCoverImgSmall}
+          description="Design a tool to help international students share household
+          items"
+          link="/projects/circle"
+          priority={true}
+        />
+        <Card
           title="Caffy"
           media={caffyCoverImg}
           mediaSmall={caffyCoverImgSmall}
           description="Design a mobile web app for a cafe"
           link="/projects/caffy"
-          priority={true}
+          priority={false}
         />
         {/* Work in process */}
         {/* <div>
