@@ -102,7 +102,7 @@ const Caffy: NextPage = () => {
       <div className="bg-[#FAFAF9] px-5 py-24 lg:py-32">
         <div className="mx-auto max-w-[1040px]">
           <div className="text-center">
-            <Headline2>Project Overview</Headline2>
+            <Headline2>Project overview</Headline2>
           </div>
           <p className="body-1 mx-auto max-w-[760px] text-center text-slate-600">
             Caffy is a Mobile Web Application designed for cafes. Among the
@@ -125,7 +125,7 @@ const Caffy: NextPage = () => {
             <div className="mx-auto max-w-[260px]">
               <div className="text-center">
                 <p className="pb-2 text-xl font-extrabold leading-8 tracking-[0.01em] text-slate-900">
-                  Project Name
+                  Project name
                 </p>
               </div>
               <p className="body-1 text-center text-slate-600">
@@ -141,9 +141,9 @@ const Caffy: NextPage = () => {
                 </p>
               </div>
               <p className="body-1 text-center text-slate-600">
-                2021.12 - 2022.02
+                2022.01 - 2022.02
                 <br />
-                (3 months)
+                (2 months)
               </p>
             </div>
             <div className="mx-auto max-w-[260px]">
@@ -306,7 +306,7 @@ const Caffy: NextPage = () => {
           {/* User Journey Map */}
           <div>
             <div className="lg:text-center">
-              <Headline3>User Journey Map</Headline3>
+              <Headline3>User journey map</Headline3>
               <div>
                 <div className="overflow-hidden rounded-lg border border-slate-300">
                   <Image
@@ -499,7 +499,7 @@ const Caffy: NextPage = () => {
             <Headline2>Refining the design</Headline2>
           </div>
           <div>
-            <Headline3>Style Guide</Headline3>
+            <Headline3>Style guide</Headline3>
             <div>
               <div className="block sm:hidden">
                 <div className="relative overflow-hidden rounded-lg border border-slate-300">
