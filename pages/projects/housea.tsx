@@ -137,7 +137,7 @@ const Housea: NextPage = () => {
       <div className="bg-[#FAFAF9] px-5 py-24 lg:py-32">
         <div className="mx-auto max-w-[1040px]">
           <div className="text-center">
-            <Headline2>Project Overview</Headline2>
+            <Headline2>Project overview</Headline2>
           </div>
           <p className="body-1 mx-auto max-w-[760px] text-center text-slate-600">
             Housea is a website for finding rental apartments. Housea&apos;s
@@ -161,7 +161,7 @@ const Housea: NextPage = () => {
             <div className="mx-auto max-w-[260px]">
               <div className="text-center">
                 <p className="pb-2 text-xl font-extrabold leading-8 tracking-[0.01em] text-slate-900">
-                  Project Name
+                  Project name
                 </p>
               </div>
               <p className="body-1 text-center text-slate-600">
@@ -296,7 +296,7 @@ const Housea: NextPage = () => {
         <div className="mx-auto mt-28 max-w-[1200px] space-y-20 px-5 lg:px-0">
           <div>
             <div className="lg:text-center">
-              <Headline3>User Persona</Headline3>
+              <Headline3>User persona</Headline3>
             </div>
             <p className="body-1 text-slate-600 lg:mx-auto lg:max-w-[760px] lg:text-center">
               Based on the insights of the user interviews, I created two
@@ -358,7 +358,7 @@ const Housea: NextPage = () => {
         <div className="mx-auto mt-28 max-w-[1200px] space-y-20 px-5 lg:px-0">
           <div>
             <div className="lg:text-center">
-              <Headline3>User Journey Map</Headline3>
+              <Headline3>User journey map</Headline3>
             </div>
             <div className="relative w-full overflow-hidden">
               <Image
