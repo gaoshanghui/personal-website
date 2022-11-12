@@ -8,7 +8,7 @@ const SocialLinks: React.FC = () => {
       </p>
       <div className="flex justify-center space-x-5">
         <SocialLink
-          href="https://www.linkedin.com/in/gao-shanghui-b503b1227/"
+          href="https://www.linkedin.com/in/gaoshanghui/"
           ariaLabel="LinkedIn profile"
         >
           <svg
