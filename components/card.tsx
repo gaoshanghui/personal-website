@@ -1,5 +1,7 @@
-import Image from "next/image";
+import Image from 'next/image'
+import { StaticImageData } from "next/image"
 import ContainedButton from "./contained-button";
+
 
 interface CardProps {
   title: string;
