@@ -39,20 +39,10 @@ const About: NextPage = () => {
               </div>
               <div className="mb-6">
                 <p className="body-1 text-slate-600">
-                  I came from China. After I finished my undergraduate studies,
-                  I chose to study abroad. I completed a graduate program in
-                  design at Kyushu University. At the same time, my research
-                  focused on using machine learning to uncover data patterns on
-                  social networking platforms and exploring approaches to
-                  present them in an engaging and easy-to-understand way.
+                  I am originally from China. After completing my undergraduate studies, I chose to pursue further education abroad and earned a master's degree in design from Kyushu University. My research focused on utilizing machine learning to identify data patterns on social networking platforms and exploring innovative ways to present this information in an engaging and easily understandable manner.
                   <br />
                   <br />
-                  For the past few years, I have been learning and researching
-                  user experience design, user interface design, and modern
-                  JavaScript-based web development. I love the design and am
-                  excited about new technologies. I have always believed that
-                  design and development are inseparable, and their creative
-                  collaboration leads to better solutions.
+                  Over the past few years, I have been dedicated to studying and researching user experience design, user interface design, and modern JavaScript-based web development. I am passionate about design and enthusiastic about new technologies. I firmly believe that design and development are inseparable, and their creative collaboration results in superior solutions.
                 </p>
               </div>
             </div>
