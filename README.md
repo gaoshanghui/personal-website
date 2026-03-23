@@ -1,31 +1,37 @@
-# Portfolio Website
+# Personal Website
 
-This is the source code for [gaoshanghui.com](https://www.gaoshanghui.com/), a portfolio website for my recent projects.
+Minimal holding page for [gaoshanghui.com](https://www.gaoshanghui.com/).
 
-## The Stack
+## Stack
 
 - Next.js
 - React
 - TypeScript
+- App Router
 - Tailwind CSS
 
 ## Scripts
 
-```
-npm run dev
+```bash
+pnpm dev
 ```
 
-Runs the app in development mode.\
-Open http://localhost:3000 to view it in the browser.
+Starts the local development server at `http://localhost:3000`.
 
-```
-npm run build
+```bash
+pnpm build
 ```
 
 Builds the app for production.
 
-```
-npm run start
+```bash
+pnpm start
 ```
 
-Runs the app in production mode.
+Runs the production build locally.
+
+```bash
+pnpm lint
+```
+
+Runs ESLint.
