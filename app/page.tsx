@@ -5,7 +5,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col justify-center bg-[var(--color-bg-canvas)] px-[var(--size-space-16)]">
       <div className="flex w-full flex-col gap-[var(--size-space-8)] pb-[var(--size-space-20)]">
         <div className="flex w-full flex-col gap-[var(--size-space-4)]">
-          <h1 className="text-display">I&apos;m Shanghui Gao,</h1>
+          <h1 className="text-display">Hi, I’m Shanghui Gao,</h1>
           <p className="text-body-l whitespace-pre-line text-[var(--color-text-secondary)]">
             {"a designer with a systems and implementation mindset. \nMy work spans product experience, design systems, and emerging AI workflows."}
           </p>
