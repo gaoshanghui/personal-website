@@ -37,7 +37,7 @@ export const metadata: Metadata = {
       "A designer with a systems and implementation mindset. My work spans product experience, design systems, and emerging AI workflows.",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/icon.svg",
   },
 };
 
