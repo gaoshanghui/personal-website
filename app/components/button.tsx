@@ -1,11 +1,27 @@
-import type { ButtonHTMLAttributes, ReactNode } from "react";
+import type {
+  AnchorHTMLAttributes,
+  ButtonHTMLAttributes,
+  ReactNode,
+} from "react";
 
 type ButtonVariant = "default" | "secondary";
 
-type ButtonProps = {
+type ButtonBaseProps = {
   children: ReactNode;
   variant?: ButtonVariant;
-} & ButtonHTMLAttributes<HTMLButtonElement>;
+};
+
+type ButtonAsButtonProps = ButtonBaseProps &
+  ButtonHTMLAttributes<HTMLButtonElement> & {
+    href?: undefined;
+  };
+
+type ButtonAsLinkProps = ButtonBaseProps &
+  AnchorHTMLAttributes<HTMLAnchorElement> & {
+    href: string;
+  };
+
+type ButtonProps = ButtonAsButtonProps | ButtonAsLinkProps;
 
 const variantClassName: Record<ButtonVariant, string> = {
   default:
@@ -17,20 +33,29 @@ const variantClassName: Record<ButtonVariant, string> = {
 export function Button({
   children,
   className = "",
-  type = "button",
   variant = "default",
   ...props
 }: ButtonProps) {
+  const classes = [
+    "effect-shadow-sm inline-flex h-12 items-center justify-center rounded-[var(--size-radius-lg)] border px-[var(--size-space-5)] py-0 transition-colors",
+    variantClassName[variant],
+    className,
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  if ("href" in props) {
+    return (
+      <a className={classes} {...props}>
+        <span className="text-body-m">{children}</span>
+      </a>
+    );
+  }
+
   return (
     <button
-      className={[
-        "effect-shadow-sm inline-flex h-12 items-center justify-center rounded-[var(--size-radius-lg)] border px-[var(--size-space-5)] py-0 transition-colors",
-        variantClassName[variant],
-        className,
-      ]
-        .filter(Boolean)
-        .join(" ")}
-      type={type}
+      className={classes}
+      type={props.type ?? "button"}
       {...props}
     >
       <span className="text-body-m">{children}</span>
